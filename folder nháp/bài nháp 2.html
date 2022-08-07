@@ -2,45 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Register</title>
+  <title>Title</title>
+</head>
+<body></body>
+<style>
+  table{
+    border-collapse: collapse;
+    border-spacing: 1px
+  }
 
+  tr:nth-child(odd){
+    background: black;
+    color: white;
+  }
+  tr:nth-child(even){
+    background: lightslategrey ;
+    color: white;
+  }
+  th:nth-child(1){
+    width: 50px;
+  }
+
+  th:nth-child(2){
+    width: 200px;
+  }
+  th:nth-child(3){
+    width: 200px;
+  }
+  th:nth-child(4){
+    width: 400px;
+  }
+
+
+
+</style>
 </head>
 <body>
-<h1>Register</h1>
+<h1> Danh sách </h1>
+<p style="font-size: medium"> Lớp C0722G1</p>
+<table border="1px" ;>
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>vân</td>
+    <td>053456345</td>
+    <td>haivan@gmail.com</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>An</td>
+    <td>0345665454</td>
+    <td>vanan@gmail.com</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>linh</td>
+    <td>06543456</td>
+    <td>halinh@gmail.com</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>tinh</td>
+    <td>09876543</td>
+    <td>chitinh@gmail.com</td>
+  </tr>
+</table>
 
-<form>
-  <p>Fist Name
-    <input type='text' name="fist Name" placeholder="FistName">
-    <br>
-    Last Name
-    <input type="text" name="last name" placeholder="LastName">
-    <br>
-    PhoneNumber
-    <input type="text" name="PhoneNumber" placeholder="PhoneNumber">
-    <br>
-    EmailAddress
-    <input type="text" name="YourEmail" placeholder="YourEmail">
-    <br>
-    Gender
-    <br>
-    <label>
-      <input type="radio" name="gender"> Male
-      <input type="radio" name="gender"> Female
-    </label>
-    <br>
-    Class
-    <select>
-      <option>C0722G1</option>
-      <option>C0722G1</option>
-      <option>C0722G1</option>
-      <option>C0722G1</option>
-      <option>C0722G1</option>
-    </select>
-    <br>
-    <input type="submit" value="Register">
-    <input type="submit" value="LOg in">
+</body>
 
-</form>
-
+</html>
 </body>
 </html>
