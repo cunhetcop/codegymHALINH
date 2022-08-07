@@ -2,11 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>form dang ky</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<input type="range" name="score" id="score" value="50" min="0" max="100">
-<input type="range" name="score" id="haha" value="500" min="0" max="250">
-<form action="/order_processing.php" method="post">
+<h1>DANG KY HOC VIEN</h1>
+<form>
+    <table>
+        <tr>
+            <td>Ho va Ten</td>
+            <td><input type="text" name="your name" /></td>
+        </tr>
+        <tr>
+            <td>Ngay sinh</td>
+            <td><input type="text" name="date"></td>
+        </tr>
+        <tr>
+            <td>Gioi tinh</td>
+            <td><input type="radio" name="gender" ><span>Nam</span><input type="radio" name="gender"><span>Nu</span></td>
+
+        </tr>
+        <tr>
+            <td>Dia chi</td>
+            <td><input type="text" name="address" ></td>
+        </tr>
+        <tr>
+            <td>Lop</td>
+            <td><select><option>-Chon Lop-</option></select></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td>Dien Thoai</td>
+            <td><input type="text" name="phone"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" name="dk" value="Dang ky"> <input type="reset" name="nl" value=" Nhap lai"></td>
+
+        </tr>
+    </table>
+</form>
 </body>
+
 </html>
