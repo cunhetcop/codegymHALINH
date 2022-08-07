@@ -1,14 +1,15 @@
-body{
-    color: black;
-    background-color: yellow;
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color:white;
+    background:black;
 }
-td{
-    color: blue;
+td, th {
+    border: 1px;
+    text-align: left;
+    padding: 8px;
 }
-h1{
-    color: blue;
-    background-color: aquamarine;
-}
-span{
-    color: black;
+tr:nth-child(even) {
+    background-color: darkgrey;
 }
