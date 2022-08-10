@@ -5,32 +5,30 @@
     <title>Title</title>
 </head>
 <body>
-<!--user:
-<input id="user" type="text" name=user><br>
-pass:
-<input id="pass" type="text" name=user>
-<br>
-<br>
-
-<input type="button" value="show" onclick="showABC()"></button>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #no {
+            position: absolute;
+        }
+    </style>
+<body>
 <script>
-  function showABC() {
-  let user = document.getElementById("user").value;
-  let pass = document.getElementById("pass").value;
-  alert(user + " - " + pass)
-  }
-</script>-->
-
-<script>
-  let a = prompt("nhập a");
-  let b = prompt("nhập b")
-  if (a%b == 0){
-    a%b
-    alert("a là bội của b")
-  } else {
-    alert("a không là bội của b")
-  }
+    var a,b,c
+    a=prompt('Nhập điểm lý')
+    b=prompt('Nhập điểm hóa')
+    c=prompt('Nhập điểm sinh')
+    a = parseInt(a);
+    b = parseInt(b);
+    c = parseInt(c);
+    document.write("Điểm môn lý:"+a+"Điểm môn Hóa:"+b+"Điểm môn sinh:"+c+"<br>")
+    document.write("Điểm trung bình:"+(a+b+c)/3+"<br>")
+    document.write("Tổng điểm 3 môn:"+(a+b+c)+"<br>")
 </script>
+</body>
+</html>
 </body>
 </html>
