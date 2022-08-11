@@ -8,39 +8,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
 <body>
-<table style="width: 500px">
-    <tr>
-        <th style="text-align: center"> Nhập số tiền</th>
-        <th style="padding-right: 15px"> Chuyển từ</th>
-        <th>Đến</th>
-    </tr>
-
-    <tr>
-        <td> <input size="21" type="text" placeholder="nhập số tiền cần chuyển" value="" id="amount">  </td>
-
-        <td> <select name="from" id="from">
-            <option value="1"> Việt Nam</option>
-            <option value="23385">USD </option> </select>
-
-        <td> <select name="to" id="to">
-            <option value="1"> Việt Nam</option>
-            <option value="23385">USD </option> </select>
-
-        <td> <button id="convert" onclick="Convert()">Convert </button> </td>
-    </tr>
-</table>
-<br>
-Kết quả <input type="text" id="ketqua" value="">
 <script>
-function Convert(){
-    let amount = parseInt(document.getElementById('amount').value)
-    let from = parseInt(document.getElementById('from').value)
-    let to = parseInt(document.getElementById('to').value)
-    let result = amount*from/to
-    document.getElementById('ketqua').value=result
-}
+    let namnhuan = false;
+
+    let isDivisibleBy4 = year % 4 == 0;
+    if (isDivisibleBy4) {
+        let isDivisibleBy100 = year % 100 == 0;
+        if (isDivisibleBy100) {
+            let isDivisibleBy400 = year % 400 == 0;
+            if (isDivisibleBy400) {
+                namnhuan = true;
+            }
+        } else {
+            namnhuan = true;
+        }
+    }
+
+    if (namnhuan) {
+        alert(year + " is a leap year");
+    } else {
+        alert(year + " is NOT a leap year");
+    }
 </script>
-</body>
-</html>
 </body>
 </html>
