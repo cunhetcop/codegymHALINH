@@ -8,26 +8,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
 <body>
+<img id="image1" onclick="changeIMG" src="https://cafefcdn.com/thumb_w/650/203337114487263232/2022/3/3/photo1646280815645-1646280816151764748403.jpg">
 <script>
-    let namnhuan = false;
-
-    let isDivisibleBy4 = year % 4 == 0;
-    if (isDivisibleBy4) {
-        let isDivisibleBy100 = year % 100 == 0;
-        if (isDivisibleBy100) {
-            let isDivisibleBy400 = year % 400 == 0;
-            if (isDivisibleBy400) {
-                namnhuan = true;
-            }
-        } else {
-            namnhuan = true;
-        }
-    }
-
-    if (namnhuan) {
-        alert(year + " is a leap year");
-    } else {
-        alert(year + " is NOT a leap year");
+    function changeIMG()
+    {
+        let image = document.getElementById("image1")
+        image.src = "https://vcdn-vnexpress.vnecdn.net/2021/03/02/103650164-731814290963011-1374-5806-7233-1614677857.jpg"
     }
 </script>
 </body>
