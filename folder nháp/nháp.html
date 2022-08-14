@@ -3,36 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body {
+            width: 300px;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        table, tr, th {
+            width: 100%;
+            border: 1px double black;
+        }
+
+        td {
+            border: 1px double black;
+            width: 25%;
+            height: 50px;
+        }
+
+        button{
+            width: 100%;
+            height: 100%;
+        }
+
+        p#bieu-thuc{
+            margin: 0 0 0 10px;
+            text-align: left;
+            height: 20px;
+        }
+
+        p#ket-qua {
+            height: 20px;
+            margin: 0 10px 0 0;
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-<h1>Kiểm tra số ngày trong tháng</h1>
-Nhập tháng cần xem (vd: 1, 2 ,3 ...) <br>
-<input id="month" type="text"> <button id="check" onclick="kiemtra()">Check</button>
-<p id="result"></P>
+<table>
+    <tr class="tieu-de" >
+        <th colspan="4">CASINO FA 570</th>
+    </tr>
+
+    <tr class="man-hinh">
+        <td colspan="4">
+            <p id="bieu-thuc"> </p>
+            <p id="ket-qua">0</p>
+        </td>
+    </tr>
+
+    <tr class="hang-1">
+        <td onclick="nhan1Nut('1')"><button>1</button></td>
+        <td onclick="nhan1Nut('2')"><button>2</button></td>
+        <td onclick="nhan1Nut('3')"><button>3</button></td>
+        <td onclick="nhan1Nut('*')"><button>*</button></td>
+    </tr>
+
+    <tr class="hang-2">
+        <td onclick="nhan1Nut('4')"><button>4</button></td>
+        <td onclick="nhan1Nut('5')"><button>5</button></td>
+        <td onclick="nhan1Nut('6')"><button>6</button></td>
+        <td onclick="nhan1Nut('/')"><button>/</button></td>
+    </tr>
+
+    <tr class="hang-3">
+        <td onclick="nhan1Nut('7')"><button>7</button></td>
+        <td onclick="nhan1Nut('8')"><button>8</button></td>
+        <td onclick="nhan1Nut('9')"><button>9</button></td>
+        <td onclick="nhan1Nut('+')"><button>+</button></td>
+    </tr>
+
+    <tr class="hang-4">
+        <td onclick="nhan1Nut('AC')"><button>AC</button></td>
+        <td onclick="nhan1Nut('0')"><button>0</button></td>
+        <td onclick="nhan1Nut('-')"><button>-</button></td>
+        <td onclick="nhan1Nut('=')"><button>=</button></td>
+    </tr>
+</table>
+
 <script>
-    function kiemtra(){
-    let thang = parseInt(document.getElementById("month").value)
-    switch (thang) {
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
-            document.getElementById("result").innerText = "tháng này có 31 ngày"
-            break;
-        case 2:
-            document.getElementById("result").innerText = "tháng này có 28 hoặc 29 ngày"
-            break;
-        case 4:
-        case 6:
-        case 9:
-        case 11:
-            document.getElementById("result").innerText = "tháng này có 30 ngày"
-            break;
-                    }
+    let soHienTai = "0"
+    let ketQua = 0
+    let phepTinh = "+"
+
+    function nhan1Nut(phimBam) {
+        if (parseInt(phimBam) == phimBam) {
+            soHienTai += phimBam
+            document.getElementById("bieu-thuc").innerHTML += phimBam
+        }
+            else if (phimBam == "AC") {
+            reset()
+        }   else if (phimBam == "=") {
+            tinhToan()
+            phepTinh = "="
+            document.getElementById("ket-qua").innerHTML = ketQua.toString()
+        }   else {
+            document.getElementById("bieu-thuc").innerHTML += phimBam
+            tinhToan()
+            phepTinh = phimBam
+        }
+    }
+
+    function reset() {
+        document.getElementById("bieu-thuc").innerHTML = " "
+        document.getElementById("ket-qua").innerHTML = "0"
+        soHienTai = "0"
+        ketQua = 0
+        phepTinh = "+"
+    }
+
+    function tinhToan() {
+        if (phepTinh ===  "+") {
+            ketQua += parseInt(soHienTai)
+        }
+        if (phepTinh == "-") {
+            ketQua -= parseFloat(soHienTai)
+        }
+        if (phepTinh == "*") {
+            ketQua *= parseFloat(soHienTai)
+        }
+        if (phepTinh == "/") {
+            ketQua /= parseFloat(soHienTai)
+        }   soHienTai = "0"
     }
 </script>
+
 </body>
 </html>
