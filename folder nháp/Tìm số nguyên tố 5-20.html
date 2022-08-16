@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="result"> </div>
+<script>
+
+    for (let a = 5; a <= 20; a++) {
+        let check = true
+        for (let i = 2; i < a; i++) {
+            if (a % i == 0) {
+                check = false
+                break;
+            }
+        }
+        if (check) {
+            document.write(a + "là số nguyên tố" + "<br>")
+        }
+    }
+</script>
+</body>
+</html>
