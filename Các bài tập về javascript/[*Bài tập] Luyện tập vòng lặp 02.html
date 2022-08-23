@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: In dãy Fibonaci-->
+<!--<script>-->
+<!--  let a=0;-->
+<!--  let b;-->
+<!--  let sum=1;-->
+<!--  let count = 2;-->
+<!--  let soluong = parseInt(prompt('N số fibonaci đầu tiên'))-->
+<!--  document.write(a+sum+"<br>");-->
+<!--  while ( count <= soluong){-->
+<!--    b=a;-->
+<!--    a=sum;-->
+<!--    sum= a+b;-->
+<!--    document.write(sum+"<br>");-->
+<!--    count++;-->
+<!--  }-->
+<!--</script>-->
+
+
+
+<!--Bài 2: Tính giai thừa của một số nguyên dương-->
+<!--<script>-->
+<!--  let n = parseInt(prompt("nhập số "));-->
+<!--  let giaithua=1-->
+<!--  if (n>1){-->
+<!--    for (let i=1 ; i <=n; i++){-->
+<!--      giaithua = giaithua*i-->
+<!--    }-->
+<!--    document.writeln(n + "có giai thừa là"+ giaithua)-->
+<!--  }else {-->
+<!--    document.writeln('làm gì có giai thừa')-->
+<!--  }-->
+<!--</script>-->
+
+
+
+<!--Bài 3: In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau-->
+<!--<script>-->
+<!--  for(let i=1; i <= 5; i++){-->
+<!--    for (let j = 1; j <=i; j++){-->
+<!--      document.write("*")-->
+<!--    }-->
+<!--    document.write("<br>")-->
+<!--  }-->
+<!--  document.write("<br>")-->
+<!--  for(let a= 5; a >= 1; a&#45;&#45;){-->
+<!--    for (let b = 1; b <= a; b++){-->
+<!--      document.write("*")-->
+<!--    }-->
+<!--    document.write("<br>")-->
+<!--  }-->
+<!--  document.write("<br>")-->
+<!--  for(let i=1; i <= 5; i++){-->
+<!--    for (let k = 5; k>i; k&#45;&#45;){-->
+<!--      document.write("&nbsp&nbsp")-->
+<!--    }-->
+<!--    for (let j = 1; j <=i; j++){-->
+<!--      document.write("*")-->
+<!--    }-->
+
+<!--    document.write("<br>")-->
+<!--  }-->
+<!--  document.write("<br>")-->
+<!--  for(let a= 5; a >= 1; a&#45;&#45;){-->
+<!--    for (let k = 5; k>a; k&#45;&#45;){-->
+<!--      document.write("&nbsp&nbsp")-->
+<!--    }-->
+<!--    for (let b = 1; b <= a; b++){-->
+<!--      document.write("*")-->
+<!--    }-->
+
+<!--    document.write("<br>")-->
+<!--  }-->
+<!--</script>-->
+
+
+
+<!--Bài 4: In hình chữ nhật-->
+<!--<script>-->
+<!--  for (let i = 0; i < 21; i++) {-->
+<!--    for (let j = 0; j<21; j++){-->
+<!--      if (i ===0 || i === 20 || j<1 || j>19){-->
+<!--        document.write('*')-->
+<!--      } else  {-->
+<!--        document.write('&nbsp&nbsp')-->
+<!--      }-->
+<!--    }-->
+<!--    document.write("<br>")-->
+<!--  }-->
+<!--</script>-->
+
+
+
+<!--Bài 5: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.-->
+<!--<script>-->
+<!--  let sono = parseInt(prompt('số tiền nợ'));-->
+<!--  let laisuat =parseInt(prompt('lãi'));-->
+<!--  let sothang = parseInt(prompt('trả trong N tháng'));-->
+<!--  let count = 1-->
+<!--  while (count <= sothang){-->
+<!--    sono = (sono*laisuat/100) + sono;-->
+<!--    count++-->
+<!--  }-->
+<!--  document.write('số tiền phải trả trong '+ sothang + ' tháng là với lãi suất '+laisuat + '% là' + sono)-->
+<!--</script>-->
+
+
+
+<!--Bài 6: In hình trái tim-->
+<!--<script>-->
+<!--  for(let i = 1; i <7 ; i++){-->
+<!--    for (let j = 1; j <= 7 ; j++){-->
+<!--      if (-->
+<!--              (i ===1 && (j ===1 || j === 4 || j === 7)) ||-->
+<!--              (i === 4 && (j <2 || j > 6)) ||-->
+<!--              (i ===5 && (j <=2 || j >=6 ))||-->
+<!--              (i === 6&& (j <4 ||j >4 ))-->
+<!--      ){-->
+<!--        document.write("&nbsp&nbsp")-->
+<!--      } else {-->
+<!--        document.write("*")-->
+<!--      }-->
+<!--    }-->
+<!--    document.write("<br>")-->
+<!--  }-->
+<!--</script>-->
+</body>
+</html>
