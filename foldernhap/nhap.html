@@ -5,23 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-
+<input type="text" id="nhapso">
+<button onclick="btnadd()">add</button>
+<button onclick="btndisplay()"> display</button>
+<p id="result"></p>
 <script>
-    function processConfirm(answer) {
-        let result = "";
-        if (answer) {
-            result = "Excellent. We'll play a nice game of chess.";
-        } else {
-            result = "Maybe later then.";
-        }
-        return result;
+    let x= 0;
+    let array = Array();
+    function btnadd(){
+        array[x]=document.getElementById('nhapso').value ;
+        alert("Element: " + array[x] + " Added at index " + x);
+        x++;
+        document.getElementById("nhapso").value = "";
     }
+    function btndisplay(){
+        let e = ""
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById("result").innerHTML = e;
 
-    let confirmAnswer = confirm("Shall we play a game?");
-    let theAnswer = processConfirm(confirmAnswer);
-    alert(theAnswer);
+    }
 </script>
-
-
 </body>
 </html>
