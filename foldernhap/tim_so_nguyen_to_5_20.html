@@ -7,18 +7,19 @@
 <body>
 <div id="result"> </div>
 <script>
-    for (let a = 5; a <= 20; a++) {
-        let check = 0;
-        for (let i = 2; i <=Math.sqrt(a); i++) {
-            if (a % i === 0) {
-                check +=1;
-                break;
-            }
-        }
+        for (let i= 5; i<20; i++) {
+        let kiemtra = true
+        for (let k = 2; k < i; k++) {
+        if (i % k == 0) {
+        kiemtra = false
+        break
+    }
+    }
 
-        if (check===0) {
-            document.write(a + " là số nguyên tố" + "<br>")
-        }
+
+        if (kiemtra) {
+        document.write(i + " la so nguyen to <br>")
+    }
     }
 </script>
 </body>
