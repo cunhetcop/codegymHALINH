@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<body>
+<canvas id="canvas" width="300" height="150" style="border:2px">
+<script>
+    class Arc{
+        x;
+        y;
+        start;
+        stop;
+        r;
+        constructor (x,y,r,start,stop){
+            this.x = x;
+            this.y = y;
+            this.start = start;
+            this.stop = stop;
+            this.r = r;
+        }
+        render(canvas){
+            let ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.r, this.start, this.stop);
+            ctx.stroke();
+        }
+    }
+    let canvas = document.getElementById("canvas");
+    let rect1 = new Arc(95, 50, 40, 0, 2 * Math.PI)
+    let rect2 = new Arc(95, 50, 40, 0, 2 * Math.PI)
+    rect1.render(canvas);
+    rect2.render(canvas);
+</script>
+</canvas>
+</body>
+</html>
