@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/intro1.iml" filepath="$PROJECT_DIR$/intro1.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/introduction to java.iml" filepath="$PROJECT_DIR$/introduction to java/introduction to java.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/system-time/system-time.iml" filepath="$PROJECT_DIR$/introduction to java/system-time/system-time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/introduction to java/variable type/variable type.iml" filepath="$PROJECT_DIR$/introduction to java/variable type/variable type.iml" />
     </modules>
   </component>
 </project>
