@@ -6,18 +6,19 @@
 </head>
 <body>
 <script>
+    let year = prompt()
   if (year % 4 == 0) {
     if (year % 100 == 0) {
       if (year % 400 == 0) {
-        alert(year + " is a leap year");
+        alert(year + " là năm nhuận");
       } else {
-        alert(year + " is NOT a leap year");
+        alert(year + " không phải năm nhuận");
       }
     } else {
-      alert(year + " is a leap year");
+      alert(year + " là năm nhuận");
     }
   } else {
-    alert(year + " is NOT a leap year");
+    alert(year + " không phải năm nhuận");
   }
 </script>
 </body>
