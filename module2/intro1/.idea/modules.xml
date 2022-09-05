@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/introduction to java/chuyen_doi_tien_te/chuyen_doi_tien_te.iml" filepath="$PROJECT_DIR$/introduction to java/chuyen_doi_tien_te/chuyen_doi_tien_te.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/Sử dụng toán tử/dien_tich_hinh_chu_nhat.iml" filepath="$PROJECT_DIR$/introduction to java/Sử dụng toán tử/dien_tich_hinh_chu_nhat.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/hiển thị lời chào/hiển thị lời chào.iml" filepath="$PROJECT_DIR$/introduction to java/hiển thị lời chào/hiển thị lời chào.iml" />
       <module fileurl="file://$PROJECT_DIR$/intro1.iml" filepath="$PROJECT_DIR$/intro1.iml" />
