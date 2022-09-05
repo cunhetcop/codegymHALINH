@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/introduction to java/dien tich hinh chu nhat/dien_tich_hinh_chu_nhat.iml" filepath="$PROJECT_DIR$/introduction to java/dien tich hinh chu nhat/dien_tich_hinh_chu_nhat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/introduction to java/Sử dụng toán tử/dien_tich_hinh_chu_nhat.iml" filepath="$PROJECT_DIR$/introduction to java/Sử dụng toán tử/dien_tich_hinh_chu_nhat.iml" />
       <module fileurl="file://$PROJECT_DIR$/intro1.iml" filepath="$PROJECT_DIR$/intro1.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/introduction to java.iml" filepath="$PROJECT_DIR$/introduction to java/introduction to java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/introduction to java/phương trình bậc nhất/phuong_trinh_bac_nhat.iml" filepath="$PROJECT_DIR$/introduction to java/phương trình bậc nhất/phuong_trinh_bac_nhat.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/system-time/system-time.iml" filepath="$PROJECT_DIR$/introduction to java/system-time/system-time.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/variable type/variable type.iml" filepath="$PROJECT_DIR$/introduction to java/variable type/variable type.iml" />
     </modules>
