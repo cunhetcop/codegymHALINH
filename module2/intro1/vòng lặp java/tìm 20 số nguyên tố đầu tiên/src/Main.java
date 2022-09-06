@@ -1,28 +1,27 @@
 import java.util.Scanner;
 
-public class nhap {
+public class Main {
     public static void main(String[] args) {
-        int count = 0;
         int i;
         int j;
+        int count = 0;
 
-        for (i = 2; i <=1000000 ; i++){
+        for (i = 2; i < 1000; i++) {
             boolean check = true;
-            if(count == 20){
+            if (count == 20) {
                 break;
             }
-            for (j = 2; j < i; j++){
-                if (i%j == 0){
+
+            for (j = 2; j < i; j++) {
+                if (i % j == 0) {
                     check = false;
                     break;
                 }
             }
-            if(check){
+            if (check) {
                 System.out.println(i);
                 count++;
             }
-
         }
-
     }
 }
