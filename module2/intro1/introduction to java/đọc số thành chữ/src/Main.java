@@ -8,10 +8,10 @@ public class Main {
         if (number < 1 || number > 999) {
             System.out.println("vui lòng nhập số từ 1-999");
         } else {
-            int u = number % 10;//số cuối
-            int tt = number / 10;
-            int t = tt % 10;//số hàng chục
-            int h = number / 100;//số hàng trăm
+            int u = number % 10;//số number chia cho 10 lấy phần dư
+            int tt = number / 10; // số number chia cho 10 lấy phần nguyên
+            int t = tt % 10;//số number sau khi chia lấy nguyên thì chia tiếp cho 10 lấy dư
+            int h = number / 100;//số hàng trăm chia 10 lấy phần nguyên
             String uw[] = {" ", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Ninteen"};
             String tw[] = {" ", "Ten", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
             String hw = " Hundred ";
