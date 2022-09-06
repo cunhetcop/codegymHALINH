@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
-      <change afterPath="$PROJECT_DIR$/src/nhap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vòng lặp java/src/nhap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vòng lặp java/tìm số nguyên tố/src/Class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vòng lặp java/tìm số nguyên tố/tìm số nguyên tố.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vòng lặp java/tính tiền cho vay/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vòng lặp java/tính tiền cho vay/tính tiền cho vay.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module1/tong hop/nhap2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module1/tong hop/nhap2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction to java/đọc số thành chữ/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/introduction to java/đọc số thành chữ/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nhap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nhap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,17 +65,17 @@
       <recent name="$PROJECT_DIR$/vòng lặp java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyClass">
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="đọc số thành chữ" />
+      <module name="tính tiền cho vay" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="hiển thị lời chào" />
+      <module name="đọc số thành chữ" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.MyClass" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.bai_9" />
-        <item itemvalue="Application.Main (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +121,7 @@
       <updated>1662354503551</updated>
       <workItem from="1662354504729" duration="333000" />
       <workItem from="1662354843782" duration="196000" />
-      <workItem from="1662355043068" duration="31775000" />
+      <workItem from="1662355043068" duration="35834000" />
     </task>
     <task id="LOCAL-00001" summary="update 2">
       <created>1662354527077</created>
@@ -273,7 +270,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662438333673</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update 2">
+      <created>1662438676633</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662438676633</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update 2">
+      <created>1662438680693</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1662438680693</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
