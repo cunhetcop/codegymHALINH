@@ -75,7 +75,7 @@
     </configuration>
     <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="dem so sin vien" />
+      <module name="Đếm số lượng sinh viên thi đỗ" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
