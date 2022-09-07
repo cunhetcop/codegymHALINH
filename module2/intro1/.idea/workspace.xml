@@ -80,7 +80,7 @@
     </configuration>
     <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="xoa phan tu" />
+      <module name="Xóa phần tử trong mảng" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
