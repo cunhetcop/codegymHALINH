@@ -11,8 +11,8 @@
       <module fileurl="file://$PROJECT_DIR$/introduction to java/introduction to java.iml" filepath="$PROJECT_DIR$/introduction to java/introduction to java.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/kiểm tra năm nhuận/kiem_tra_nam_nhuan.iml" filepath="$PROJECT_DIR$/introduction to java/kiểm tra năm nhuận/kiem_tra_nam_nhuan.iml" />
       <module fileurl="file://$PROJECT_DIR$/mảng và phương thức/mảng và phương thức.iml" filepath="$PROJECT_DIR$/mảng và phương thức/mảng và phương thức.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mảng và phương thức/nho nhat/nho nhat.iml" filepath="$PROJECT_DIR$/mảng và phương thức/nho nhat/nho nhat.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/phương trình bậc nhất/phuong_trinh_bac_nhat.iml" filepath="$PROJECT_DIR$/introduction to java/phương trình bậc nhất/phuong_trinh_bac_nhat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mảng và phương thức/phương thức tìm giá trị nhỏ nhất trong mảng/phương thức tìm giá trị nhỏ nhất trong mảng.iml" filepath="$PROJECT_DIR$/mảng và phương thức/phương thức tìm giá trị nhỏ nhất trong mảng/phương thức tìm giá trị nhỏ nhất trong mảng.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/system-time/system-time.iml" filepath="$PROJECT_DIR$/introduction to java/system-time/system-time.iml" />
       <module fileurl="file://$PROJECT_DIR$/vòng lặp java/thiết kế menu cho ứng dụng có lựa chọn/thiết kế menu cho ứng dụng có lựa chọn.iml" filepath="$PROJECT_DIR$/vòng lặp java/thiết kế menu cho ứng dụng có lựa chọn/thiết kế menu cho ứng dụng có lựa chọn.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/tính số ngày trong tháng/tinh_so_ngay_trong_thang.iml" filepath="$PROJECT_DIR$/introduction to java/tính số ngày trong tháng/tinh_so_ngay_trong_thang.iml" />
@@ -26,6 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/vòng lặp java/tính tiền cho vay/tính tiền cho vay.iml" filepath="$PROJECT_DIR$/vòng lặp java/tính tiền cho vay/tính tiền cho vay.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/variable type/variable type.iml" filepath="$PROJECT_DIR$/introduction to java/variable type/variable type.iml" />
       <module fileurl="file://$PROJECT_DIR$/vòng lặp java/vòng lặp java.iml" filepath="$PROJECT_DIR$/vòng lặp java/vòng lặp java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mảng và phương thức/xoa phan tu/xoa phan tu.iml" filepath="$PROJECT_DIR$/mảng và phương thức/xoa phan tu/xoa phan tu.iml" />
       <module fileurl="file://$PROJECT_DIR$/mảng và phương thức/đảo ngược các phần tử trong mảng/đảo ngược các phần tử trong mảng.iml" filepath="$PROJECT_DIR$/mảng và phương thức/đảo ngược các phần tử trong mảng/đảo ngược các phần tử trong mảng.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/đọc số thành chữ/đọc số thành chữ.iml" filepath="$PROJECT_DIR$/introduction to java/đọc số thành chữ/đọc số thành chữ.iml" />
     </modules>
