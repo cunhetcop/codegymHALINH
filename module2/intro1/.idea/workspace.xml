@@ -68,7 +68,7 @@
     </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="chuong trinh" />
+      <module name="chuong trinh chuyển đổi nhiệt độ" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
