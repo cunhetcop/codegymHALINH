@@ -14,7 +14,7 @@ public class Main {
             if(i < index){
                 y[i] = x[i];
             }else if (i == index){
-                y[i] = 9;
+                y[i] = 15;
             }else {
                 y[i]= x[i-1];
             }
