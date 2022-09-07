@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mảng và phương thức/chuong trinh/chuong trinh.iml" filepath="$PROJECT_DIR$/mảng và phương thức/chuong trinh/chuong trinh.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/chuyển dổi tiền tệ/chuyển dổi tiền tệ.iml" filepath="$PROJECT_DIR$/introduction to java/chuyển dổi tiền tệ/chuyển dổi tiền tệ.iml" />
       <module fileurl="file://$PROJECT_DIR$/introduction to java/Sử dụng toán tử/dien_tich_hinh_chu_nhat.iml" filepath="$PROJECT_DIR$/introduction to java/Sử dụng toán tử/dien_tich_hinh_chu_nhat.iml" />
       <module fileurl="file://$PROJECT_DIR$/vòng lặp java/hiển thị các hình bằng dấu */hiển thị các hình bằng dấu *.iml" filepath="$PROJECT_DIR$/vòng lặp java/hiển thị các hình bằng dấu */hiển thị các hình bằng dấu *.iml" />
