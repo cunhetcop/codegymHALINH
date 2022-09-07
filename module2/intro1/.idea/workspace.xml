@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
-      <change afterPath="$PROJECT_DIR$/vòng lặp java/tìm các số nguyên tố &lt;100/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vòng lặp java/tìm các số nguyên tố &lt;100/tìm các số nguyên tố &lt;100.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao_nguoc_mang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nhap1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nhap2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nhap3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tim_min_max.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nhap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nhap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nhap.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,37 +66,37 @@
       <recent name="$PROJECT_DIR$/vòng lặp java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.nhap">
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.dao_nguoc_mang">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="tìm 20 số nguyên tố đầu tiên" />
+      <module name="kiem_tra_nam_nhuan" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="tìm các số nguyên tố &lt;100" />
+    <configuration name="dao_nguoc_mang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dao_nguoc_mang" />
+      <module name="intro1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="thiết kế menu cho ứng dụng có lựa chọn" />
+    <configuration name="nhap1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nhap1" />
+      <module name="intro1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="hiển thị các hình bằng dấu *" />
+    <configuration name="nhap2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nhap2" />
+      <module name="intro1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nhap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nhap" />
+    <configuration name="tim_min_max" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tim_min_max" />
       <module name="intro1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.nhap" />
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.dao_nguoc_mang" />
+        <item itemvalue="Application.nhap1" />
+        <item itemvalue="Application.tim_min_max" />
+        <item itemvalue="Application.nhap2" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +122,7 @@
       <updated>1662354503551</updated>
       <workItem from="1662354504729" duration="333000" />
       <workItem from="1662354843782" duration="196000" />
-      <workItem from="1662355043068" duration="45648000" />
+      <workItem from="1662355043068" duration="58898000" />
     </task>
     <task id="LOCAL-00001" summary="update 2">
       <created>1662354527077</created>
@@ -318,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662463976479</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update 2">
+      <created>1662464340982</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1662464340982</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
