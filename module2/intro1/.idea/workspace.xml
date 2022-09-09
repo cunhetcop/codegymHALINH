@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2" />
+    <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MayTinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hamtinhtongcacphantu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/hinhchunhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/themphantuvaomang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/tong hop/nhap2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module1/tong hop/nhap2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nhap1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nhap1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nhap2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nhap2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nhap3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nhanvien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/them_mot_phan_tu_vao_mang.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -24,13 +38,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EKqDXBaxTSKuDKsG9qzC8AQp9w" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -46,10 +63,13 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/introduction to java/tính chỉ số BMI" />
@@ -58,31 +78,37 @@
       <recent name="$PROJECT_DIR$/vòng lặp java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="thêm phần tử trong mảng" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Nhanvien">
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="tìm phần tử lớn nhất trong mảng 2 chiều" />
+      <module name="Xóa phần tử trong mảng" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Đếm số lượng sinh viên thi đỗ" />
+    <configuration name="Nhanvien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nhanvien" />
+      <module name="intro1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="gộp 2 mảng" />
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.main" />
+      <module name="intro1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lopthuoctinhdoituong.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nhap1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nhap1" />
+      <module name="intro1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Nhanvien" />
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.nhap2" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.nhap1" />
+        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +140,11 @@
       <updated>1662354503551</updated>
       <workItem from="1662354504729" duration="333000" />
       <workItem from="1662354843782" duration="196000" />
-      <workItem from="1662355043068" duration="70464000" />
+      <workItem from="1662355043068" duration="71017000" />
+      <workItem from="1662561359299" duration="4051000" />
+      <workItem from="1662601487431" duration="2278000" />
+      <workItem from="1662603846325" duration="848000" />
+      <workItem from="1662606840796" duration="35423000" />
     </task>
     <task id="LOCAL-00001" summary="update 2">
       <created>1662354527077</created>
@@ -438,7 +468,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662551288713</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="update 2">
+      <created>1662551350424</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1662551350424</updated>
+    </task>
+    <task id="LOCAL-00048" summary="update 2">
+      <created>1662551521266</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1662551521266</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update 2">
+      <created>1662551544998</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1662551544998</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,6 +507,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
@@ -471,5 +523,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
