@@ -1,6 +1,8 @@
+package lopthuoctinhdoituong;
+
 import java.util.Scanner;
 
-public class Nhanvien {
+class Nhanvien {
     int id;
     String name;
     int age;
@@ -13,7 +15,7 @@ public class Nhanvien {
         this.adress = adress;
     }
 
-    public String show(){
+    public String show() {
         return "tên là: " + name + " tuổi là " + age + " địa chỉ là: " + adress + " id là " +id;
     }
     public static void main(String[] args) {

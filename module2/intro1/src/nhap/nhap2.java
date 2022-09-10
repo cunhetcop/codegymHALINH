@@ -1,3 +1,5 @@
+package nhap;
+
 import java.io.Console;
 
 public class nhap2 {

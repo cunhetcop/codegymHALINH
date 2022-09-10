@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MayTinh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hamtinhtongcacphantu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/hinhchunhat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/themphantuvaomang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/Nhanvien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nhap/nhap1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module1/tong hop/nhap2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module1/tong hop/nhap2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nhap1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nhap1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nhap2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nhap2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nhap3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nhanvien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/them_mot_phan_tu_vao_mang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nhanvien.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hamtinhtongcacphantu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hamtinhtongcacphantu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nhap1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nhap2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nhap/nhap2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,27 +41,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/nguyenhalinh/codegymHALINH/module2/intro1/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nguyenhalinh/codegymHALINH/module2/intro1/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="1" />
@@ -75,19 +75,27 @@
       <recent name="$PROJECT_DIR$/introduction to java/tính chỉ số BMI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/nhap" />
       <recent name="$PROJECT_DIR$/vòng lặp java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Nhanvien">
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.nhap.Nhanvien">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Xóa phần tử trong mảng" />
+      <module name="thêm phần tử trong mảng" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Nhanvien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Nhanvien" />
+      <module name="intro1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hamtinhtongcacphantu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hamtinhtongcacphantu" />
       <module name="intro1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,27 +114,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nhap1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nhap1" />
+    <configuration name="nhap.Nhanvien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nhap.Nhanvien" />
       <module name="intro1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="nhap2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nhap2" />
-      <module name="intro1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nhap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.nhap.Nhanvien" />
+        <item itemvalue="Application.hamtinhtongcacphantu" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Nhanvien" />
         <item itemvalue="Application.main" />
-        <item itemvalue="Application.nhap2" />
-        <item itemvalue="Application.nhap1" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +151,8 @@
       <workItem from="1662561359299" duration="4051000" />
       <workItem from="1662601487431" duration="2278000" />
       <workItem from="1662603846325" duration="848000" />
-      <workItem from="1662606840796" duration="35423000" />
+      <workItem from="1662606840796" duration="50472000" />
+      <workItem from="1662813430345" duration="5439000" />
     </task>
     <task id="LOCAL-00001" summary="update 2">
       <created>1662354527077</created>
