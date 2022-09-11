@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
-      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/Nhanvien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nhap/nhap1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module1/tong hop/nhap2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module1/tong hop/nhap2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nhanvien.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hamtinhtongcacphantu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hamtinhtongcacphantu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nhap1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nhap2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nhap/nhap2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +145,8 @@
       <workItem from="1662601487431" duration="2278000" />
       <workItem from="1662603846325" duration="848000" />
       <workItem from="1662606840796" duration="50472000" />
-      <workItem from="1662813430345" duration="5439000" />
+      <workItem from="1662813430345" duration="5440000" />
+      <workItem from="1662842350678" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="update 2">
       <created>1662354527077</created>
