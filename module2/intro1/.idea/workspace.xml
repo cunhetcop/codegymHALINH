@@ -5,7 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
+      <change afterPath="$PROJECT_DIR$/mảng và phương thức/src/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mảng và phương thức/src/MyNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/ChuyenChuHoaThanhChuThuong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/ChuyenChuThuongThanhChuHoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/ChuyenDoiCharSangString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/DaoNguocCacTuTrongChuoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/DemSoLanKyTuXuatHien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/DemSoNguyenAmPhuAm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/KiemTraChuoiDoiXung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/SapXepChuoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/TimCacKyTuTrungLap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/VietHoaKyTuDauTien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuoi_String/XoaKhoangTrangCuaChuoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InputOutput/ChuongTrinhDocGiaTriInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InputOutput/LayDiaChi_IP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InputOutput/NhanDauVao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/CachLamTronSo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/ChuongTrinhTachMotSoNguyenThanhNhieuChuSo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/DaoNguocMotSo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/HienThiCacSoNguyenToTu1_toiN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/HienThiNSoNguyenToDauTien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/HoanDoi2So.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/InCacSoArmstrong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/InCacSoLeTu1_toiN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/KiemTraDoiXung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/KiemTraHaiSoNguyenTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/KiemTraNamNhuan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/KiemTraSoAmDuong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/KiemTraSoChanHaySoLe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/KiemTraSoHoanHao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/KiemTraSoNguyenAmVaPhuAm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/SoChinhPhuong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/TaoCacSoNgauNhien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/TimBoiChungNhoNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/TimPhanNguyenVaPhanDu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/TimSoBangToanTuBaNgoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/TimSoLonNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/TimUocChungLonNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/TimUocCuaMotSoNguyen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SapXepTimKiem/KiemTraXTrongMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SapXepTimKiem/SapXepTangDan_GIamDan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TinhToan/TinhCanBacHai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TinhToan/TinhLaiSuat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TinhToan/TinhLaiXuatKep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TinhToan/TinhTong2SoNguyen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TinhToan/TinhTong2SoThuc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TinhToan/TinhTongCacSoTuNhien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tinhdientich/TinhDienTichHinhChuNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tinhdientich/TinhDienTichTamGiac.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tinhdientich/TinhDienTich_ChuViHinhTron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tinhdientich/TinhDienTich_ChuViHinhVuong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VongLap/ChuyenDoiMangThanhChuoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VongLap/DaoNguocPhanTuTrongMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VongLap/SapXepMangTangDan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VongLap/ThemMaTranBangMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VongLap/TinhTongCacSoTrongMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VongLap/TinhTongTrungBinhCong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/QuanLyMang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mảng và phương thức/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mảng và phương thức/thêm phần tử trong mảng/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/mảng và phương thức/thêm phần tử trong mảng/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,30 +132,23 @@
       <recent name="$PROJECT_DIR$/vòng lặp java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.nhap.Nhanvien">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TestStaticMethod">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="thêm phần tử trong mảng" />
+      <module name="mảng và phương thức" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Nhanvien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Nhanvien" />
-      <module name="intro1" />
+    <configuration name="MyNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyNumber" />
+      <module name="mảng và phương thức" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hamtinhtongcacphantu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hamtinhtongcacphantu" />
-      <module name="intro1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.main" />
+    <configuration name="QuanLyMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.QuanLyMang" />
       <module name="intro1" />
       <extension name="coverage">
         <pattern>
@@ -107,12 +160,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nhap.Nhanvien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nhap.Nhanvien" />
-      <module name="intro1" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solution" />
+      <module name="mảng và phương thức" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStaticMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaiTapJames.TestStaticMethod" />
+      <module name="mảng và phương thức" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nhap.*" />
+          <option name="PATTERN" value="BaiTapJames.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.nhap.Nhanvien" />
-        <item itemvalue="Application.hamtinhtongcacphantu" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Nhanvien" />
-        <item itemvalue="Application.main" />
+        <item itemvalue="Application.TestStaticMethod" />
+        <item itemvalue="Application.MyNumber" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.QuanLyMang" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +206,8 @@
       <workItem from="1662603846325" duration="848000" />
       <workItem from="1662606840796" duration="50472000" />
       <workItem from="1662813430345" duration="5440000" />
-      <workItem from="1662842350678" duration="599000" />
+      <workItem from="1662842350678" duration="8172000" />
+      <workItem from="1662957019931" duration="11899000" />
     </task>
     <task id="LOCAL-00001" summary="update 2">
       <created>1662354527077</created>

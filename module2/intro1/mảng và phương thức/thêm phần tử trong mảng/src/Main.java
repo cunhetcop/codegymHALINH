@@ -9,12 +9,14 @@ public class Main {
         };
         System.out.println("Nhập vị trí");
         int index = scanner.nextInt();
+        System.out.println("Nhập só muốn thêm");
+        int a = scanner.nextInt();
         int[] y = new  int[x.length+1];
         for (int i =0 ; i < y.length; i++){
             if(i < index){
                 y[i] = x[i];
             }else if (i == index){
-                y[i] = 15;
+                y[i] = a;
             }else {
                 y[i]= x[i-1];
             }
