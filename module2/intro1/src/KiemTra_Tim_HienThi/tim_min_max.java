@@ -1,3 +1,5 @@
+package KiemTra_Tim_HienThi;
+
 public class tim_min_max {
     public static void main(String[] args) {
 //        int[] array = new int[]{

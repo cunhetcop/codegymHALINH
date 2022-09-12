@@ -1,3 +1,5 @@
+package TinhToan;
+
 public class hamtinhtongcacphantu {
     public static int sum(int[]arr){
         int sum = 0;

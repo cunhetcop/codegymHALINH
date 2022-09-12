@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/kethua/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/kethua/Anthit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/kethua/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MayTinh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao_nguoc_mang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SapXepTimKiem/dao_nguoc_mang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hamtinhtongcacphantu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TinhToan/hamtinhtongcacphantu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/themphantuvaomang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SapXepTimKiem/themphantuvaomang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tim_min_max.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KiemTra_Tim_HienThi/tim_min_max.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +89,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestStaticMethod (2)">
+  <component name="RunManager" selected="Application.main">
+    <configuration name="Anthit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.kethua.Anthit" />
+      <module name="intro1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lopthuoctinhdoituong.kethua.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QuanLyMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.QuanLyMang" />
       <module name="intro1" />
@@ -107,25 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStaticProperty (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.TestStaticProperty" />
-      <module name="mảng và phương thức" />
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.kethua.main" />
+      <module name="intro1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestStaticProperty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.TestStaticProperty" />
-      <module name="mảng và phương thức" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.*" />
+          <option name="PATTERN" value="lopthuoctinhdoituong.kethua.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.Anthit" />
         <item itemvalue="Application.TestStaticMethod (2)" />
         <item itemvalue="Application.TestStaticMethod (1)" />
         <item itemvalue="Application.QuanLyMang" />
-        <item itemvalue="Application.TestStaticProperty (1)" />
-        <item itemvalue="Application.TestStaticProperty" />
       </list>
     </recent_temporary>
   </component>
@@ -160,14 +170,7 @@
       <workItem from="1662606840796" duration="50472000" />
       <workItem from="1662813430345" duration="5440000" />
       <workItem from="1662842350678" duration="8172000" />
-      <workItem from="1662957019931" duration="13627000" />
-    </task>
-    <task id="LOCAL-00004" summary="update 2">
-      <created>1662355081851</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1662355081851</updated>
+      <workItem from="1662957019931" duration="21403000" />
     </task>
     <task id="LOCAL-00005" summary="update 2">
       <created>1662355226262</created>
@@ -505,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662980003827</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="update 2">
+      <created>1662981324268</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1662981324268</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
