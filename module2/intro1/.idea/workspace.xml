@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
-      <change afterPath="$PROJECT_DIR$/bbbbb/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bbbbb/vvvv/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mảng và phương thức/src/[Thực hành] Static Method/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/bbbbb/[Thực hành] Static Method/src/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mảng và phương thức/src/[Thực hành] Static Property/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/bbbbb/[Thực hành] Static Property/src/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,40 +69,40 @@
       <recent name="$PROJECT_DIR$/introduction to java/tính chỉ số BMI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Access modifier, static method, static property/src/Static property" />
+      <recent name="$PROJECT_DIR$/Access modifier, static method, static property/src/Static Method" />
+      <recent name="$PROJECT_DIR$/Access modifier, static method, static property" />
       <recent name="$PROJECT_DIR$/bbbbb" />
       <recent name="$PROJECT_DIR$/mảng và phương thức/src/[Thực hành] Static Property" />
-      <recent name="$PROJECT_DIR$/mảng và phương thức/src/[Thực hành] Static Method" />
-      <recent name="$PROJECT_DIR$/mảng và phương thức/src" />
-      <recent name="$PROJECT_DIR$/src/nhap" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestStaticProperty (1)">
-    <configuration name="MyNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyNumber" />
-      <module name="mảng và phương thức" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Solution" />
-      <module name="mảng và phương thức" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestStaticMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaiTapJames.TestStaticMethod" />
-      <module name="mảng và phương thức" />
+  <component name="RunManager" selected="Application.TestStaticMethod (2)">
+    <configuration name="QuanLyMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.QuanLyMang" />
+      <module name="intro1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BaiTapJames.*" />
+          <option name="PATTERN" value="lopthuoctinhdoituong.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStaticMethod (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestStaticMethod" />
+      <module name="Access modifier, static method, static property" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStaticMethod (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestStaticMethod" />
+      <module name="Access modifier, static method, static property" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestStaticMethod (2)" />
+        <item itemvalue="Application.TestStaticMethod (1)" />
+        <item itemvalue="Application.QuanLyMang" />
         <item itemvalue="Application.TestStaticProperty (1)" />
         <item itemvalue="Application.TestStaticProperty" />
-        <item itemvalue="Application.TestStaticMethod" />
-        <item itemvalue="Application.MyNumber" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -164,14 +160,7 @@
       <workItem from="1662606840796" duration="50472000" />
       <workItem from="1662813430345" duration="5440000" />
       <workItem from="1662842350678" duration="8172000" />
-      <workItem from="1662957019931" duration="12753000" />
-    </task>
-    <task id="LOCAL-00003" summary="update 2">
-      <created>1662354856826</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1662354856826</updated>
+      <workItem from="1662957019931" duration="13627000" />
     </task>
     <task id="LOCAL-00004" summary="update 2">
       <created>1662355081851</created>
@@ -509,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662979634153</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update 2">
+      <created>1662980003827</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1662980003827</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

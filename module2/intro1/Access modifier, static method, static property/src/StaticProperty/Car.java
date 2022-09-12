@@ -1,3 +1,5 @@
+package StaticProperty;
+
 public class Car {
     private String name;
     private String engine;
