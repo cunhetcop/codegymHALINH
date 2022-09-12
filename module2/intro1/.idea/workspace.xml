@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2" />
+    <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
+      <change afterPath="$PROJECT_DIR$/bbbbb/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bbbbb/vvvv/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mảng và phương thức/src/[Thực hành] Static Method/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/bbbbb/[Thực hành] Static Method/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mảng và phương thức/src/[Thực hành] Static Property/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/bbbbb/[Thực hành] Static Property/src/Car.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="module-info" />
         <option value="Class" />
       </list>
     </option>
@@ -66,10 +73,14 @@
       <recent name="$PROJECT_DIR$/introduction to java/tính chỉ số BMI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bbbbb" />
+      <recent name="$PROJECT_DIR$/mảng và phương thức/src/[Thực hành] Static Property" />
       <recent name="$PROJECT_DIR$/mảng và phương thức/src/[Thực hành] Static Method" />
       <recent name="$PROJECT_DIR$/mảng và phương thức/src" />
       <recent name="$PROJECT_DIR$/src/nhap" />
-      <recent name="$PROJECT_DIR$/vòng lặp java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.TestStaticProperty (1)">
@@ -153,14 +164,7 @@
       <workItem from="1662606840796" duration="50472000" />
       <workItem from="1662813430345" duration="5440000" />
       <workItem from="1662842350678" duration="8172000" />
-      <workItem from="1662957019931" duration="12293000" />
-    </task>
-    <task id="LOCAL-00002" summary="update 2">
-      <created>1662354675188</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662354675188</updated>
+      <workItem from="1662957019931" duration="12753000" />
     </task>
     <task id="LOCAL-00003" summary="update 2">
       <created>1662354856826</created>
@@ -498,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662979270854</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="update 2">
+      <created>1662979634153</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1662979634153</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

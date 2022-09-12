@@ -1,5 +1,3 @@
-package BaiTapJames;
-
 public class Student {
     private int rollno;
     private String name;
