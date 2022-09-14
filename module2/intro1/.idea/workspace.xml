@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
-      <change afterPath="$PROJECT_DIR$/Abstract Interface/Abstract Interface.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/Animal_interface_Edible/AbstractAndInterfaceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/Animal_interface_Edible/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/Animal_interface_Edible/Chicken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/Animal_interface_Edible/Edible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/Animal_interface_Edible/Tiger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nhap1/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/InterfaceHinhHoc/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/InterfaceHinhHoc/ComparableCircle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +18,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="module-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -183,14 +175,7 @@
       <workItem from="1662813430345" duration="5440000" />
       <workItem from="1662842350678" duration="8172000" />
       <workItem from="1662957019931" duration="21438000" />
-      <workItem from="1663039699396" duration="15142000" />
-    </task>
-    <task id="LOCAL-00007" summary="update 2">
-      <created>1662355260360</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1662355260360</updated>
+      <workItem from="1663039699396" duration="15484000" />
     </task>
     <task id="LOCAL-00008" summary="update 2">
       <created>1662361323969</created>
@@ -528,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663152834145</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="update 2">
+      <created>1663154477969</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1663154477969</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
