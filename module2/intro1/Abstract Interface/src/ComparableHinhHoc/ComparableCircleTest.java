@@ -1,4 +1,4 @@
-package InterfaceHinhHoc;
+package ComparableHinhHoc;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package InterfaceHinhHoc;
+package ComparableHinhHoc;
 
 public class Circle {
     public Circle(double radius) {

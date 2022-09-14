@@ -1,4 +1,4 @@
-package InterfaceHinhHoc;
+package ComparableHinhHoc;
 
 public class ComparableCircle extends Circle
         implements Comparable<ComparableCircle> {
