@@ -1,5 +1,6 @@
 package lopthuoctinhdoituong;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 class Nhanvien {
@@ -18,24 +19,44 @@ class Nhanvien {
     public String show() {
         return "tên là: " + name + " tuổi là " + age + " địa chỉ là: " + adress + " id là " +id;
     }
-    public static void main(String[] args) {
+
+    public void input(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập id nhân viên: ");
-        int id = Integer.parseInt(sc.nextLine());
+        this.id = Integer.parseInt(sc.nextLine());
 
 
         System.out.println("Nhập tên nhân viên: ");
-        String name = sc.nextLine();
+        this.name = sc.nextLine();
 
 
         System.out.println("Nhập tuổi nhân viên: ");
-        int age = Integer.parseInt(sc.nextLine());
+        this.age = Integer.parseInt(sc.nextLine());
 
 
         System.out.println("Nhập địa chỉ nhân viên: ");
-        String adress = sc.nextLine();
+        this.adress = sc.nextLine();
 
-        Nhanvien nv1 = new Nhanvien(id,name,age,adress);
+
+    }
+
+    public Nhanvien() {
+    }
+
+    public static void main(String[] args) {
+        Nhanvien[] mang = new Nhanvien[2];
+
+        Nhanvien nv1 = new Nhanvien();
+        nv1.input();
+        mang[0] = nv1;
         System.out.println(nv1.show());
+
+        Nhanvien nv2 = new Nhanvien();
+        nv2.input();
+        mang[1] = nv2;
+        System.out.println(nv2.show());
+
+
+        System.out.println(Arrays.toString(mang));
     }
 }
