@@ -1,9 +1,9 @@
-package lopthuoctinhdoituong;
+package lopthuoctinhdoituong.QuanLyMangSo;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class QuanLyMang {
+public class QuanLyMangSo {
     public static void main(String[] args) {
         int[] numbers = new int[]{1, 2, 3, 4, 5, 6, 7};
         Scanner sc = new Scanner(System.in);
@@ -63,10 +63,10 @@ public class QuanLyMang {
                     break;
 
                 case 0:
-                    System.out.println("cút");
+                    System.err.println("cút");
                     break;
                 default:
-                    System.out.println("Nhập lại số");
+                    System.err.println("Nhập lại số");
                     break;
             }
         }

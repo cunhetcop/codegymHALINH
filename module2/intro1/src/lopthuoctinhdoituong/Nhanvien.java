@@ -3,7 +3,7 @@ package lopthuoctinhdoituong;
 import java.util.Arrays;
 import java.util.Scanner;
 
-class Nhanvien {
+public class Nhanvien {
     int id;
     String name;
     int age;

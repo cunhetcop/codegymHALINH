@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff2ba73-8212-4b4c-b2df-5ad27a83b03f" name="Changes" comment="update 2">
-      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/InterfaceHinhHoc/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Abstract Interface/src/InterfaceHinhHoc/ComparableCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/QuanLyMangSo/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/QuanLyMangSo/NhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/QuanLyNhanVien/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/QuanLyNhanVien/NhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/QuanLyNhanVien/methodNV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lopthuoctinhdoituong/Nhanvien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/Nhanvien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lopthuoctinhdoituong/QuanLyMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lopthuoctinhdoituong/QuanLyMangSo/QuanLyMangSo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nhap1/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nhap1/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,39 +88,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.nhap1.main">
-    <configuration name="CircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HinhHoc.CircleTest" />
-      <module name="kethua" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HinhHoc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShapeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HinhHoc.ShapeTest" />
-      <module name="kethua" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HinhHoc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TruongPhong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nhap1.TruongPhong" />
+  <component name="RunManager" selected="Application.lopthuoctinhdoituong.QuanLyNhanVien.Main">
+    <configuration name="Display" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.QuanLyNhanVien.Display" />
       <module name="intro1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nhap1.*" />
+          <option name="PATTERN" value="lopthuoctinhdoituong.QuanLyNhanVien.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +102,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.kethua.main" />
+    <configuration name="NhanVien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.QuanLyMangSo.NhanVien" />
       <module name="intro1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lopthuoctinhdoituong.kethua.*" />
+          <option name="PATTERN" value="lopthuoctinhdoituong.QuanLyMangSo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuanLyMangSo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.QuanLyMangSo.QuanLyMangSo" />
+      <module name="intro1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lopthuoctinhdoituong.QuanLyMangSo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lopthuoctinhdoituong.QuanLyNhanVien.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lopthuoctinhdoituong.QuanLyNhanVien.Main" />
+      <module name="intro1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lopthuoctinhdoituong.QuanLyNhanVien.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lopthuoctinhdoituong.QuanLyNhanVien.Main" />
+        <item itemvalue="Application.Display" />
+        <item itemvalue="Application.NhanVien" />
+        <item itemvalue="Application.QuanLyMangSo" />
         <item itemvalue="Application.nhap1.main" />
-        <item itemvalue="Application.TruongPhong" />
-        <item itemvalue="Application.CircleTest" />
-        <item itemvalue="Application.ShapeTest" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -175,28 +182,7 @@
       <workItem from="1662813430345" duration="5440000" />
       <workItem from="1662842350678" duration="8172000" />
       <workItem from="1662957019931" duration="21438000" />
-      <workItem from="1663039699396" duration="15484000" />
-    </task>
-    <task id="LOCAL-00008" summary="update 2">
-      <created>1662361323969</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1662361323969</updated>
-    </task>
-    <task id="LOCAL-00009" summary="update 2">
-      <created>1662375013649</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1662375013649</updated>
-    </task>
-    <task id="LOCAL-00010" summary="update 2">
-      <created>1662375974996</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1662375974996</updated>
+      <workItem from="1663039699396" duration="38814000" />
     </task>
     <task id="LOCAL-00011" summary="update 2">
       <created>1662376734508</created>
@@ -520,7 +506,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663154477969</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update 2">
+      <created>1663154746058</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1663154746058</updated>
+    </task>
+    <task id="LOCAL-00058" summary="update 2">
+      <created>1663154846425</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1663154846425</updated>
+    </task>
+    <task id="LOCAL-00059" summary="update 2">
+      <created>1663154913382</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1663154913382</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
