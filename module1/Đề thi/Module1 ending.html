@@ -40,7 +40,6 @@ Bài 2:
 <!--</script>-->
 
 
-
 Bài 3:
 <!--<script>-->
 <!--    let x = prompt("nhap vao so x");-->
@@ -88,38 +87,38 @@ Bài 3 ( cách làm khác )
 
 Bài 4:
 <canvas id="canvas" width="500" height="700" style="border: 1px solid red">
-<script>
-    class Rectangle {
-        x;
-        y;
-        width;
-        height;
-        color;
+    <script>
+        class Rectangle {
+            x;
+            y;
+            width;
+            height;
+            color;
 
-        constructor(x, y, width, height, c) {
+            constructor(x, y, width, height, c) {
 
-            this.x = x;
-            this.y = y;
-            this.width = width;
-            this.height = height;
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
 
 
-            this.color = c;
+                this.color = c;
 
+            }
+
+            render(canvas) {
+                let ctx = canvas.getContext('2d');
+                ctx.fillStyle = this.color;
+                ctx.fillRect(this.x, this.y, this.width, this.height);
+
+            }
         }
 
-        render(canvas) {
-            let ctx = canvas.getContext('2d');
-            ctx.fillStyle = this.color;
-            ctx.fillRect(this.x, this.y, this.width, this.height);
-
-        }
-    }
-
-    let canvas = document.getElementById('canvas');
-    let rect1 = new Rectangle(100, 100, 300, 200, "deeppink");
-    rect1.render(canvas)
-</script>
+        let canvas = document.getElementById('canvas');
+        let rect1 = new Rectangle(100, 100, 300, 200, "deeppink");
+        rect1.render(canvas)
+    </script>
 </canvas>
 </body>
 </html>
