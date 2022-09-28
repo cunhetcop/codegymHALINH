@@ -1,9 +1,6 @@
 package lopthuoctinhdoituong.QuanLyNhanVien;
 
 
-import lopthuoctinhdoituong.Nhanvien;
-import lopthuoctinhdoituong.kethua.QuanLyNhanVien;
-
 import java.util.Scanner;
 
 public class methodNV {
