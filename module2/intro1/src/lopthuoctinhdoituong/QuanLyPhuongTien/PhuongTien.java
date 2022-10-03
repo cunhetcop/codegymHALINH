@@ -4,21 +4,20 @@ import java.util.Scanner;
 
 public class PhuongTien {
     private int id;
-    private String hangsanxuat;
-    private int year;
-    private int price;
-    private String color;
-    Scanner scanner = new Scanner(System.in);
+    private String HangSanXuat;
+    private String NamSanXuat;
+    private double GiaXe;
+    private String MauXe;
 
     public PhuongTien() {
     }
 
-    public void PhuongTien(int id, String hangsanxuat, int year, int price, String color) {
+    public PhuongTien(int id, String hangSanXuat, String namSanXuat, double giaXe, String mauXe) {
         this.id = id;
-        this.hangsanxuat = hangsanxuat;
-        this.year = year;
-        this.price = price;
-        this.color = color;
+        HangSanXuat = hangSanXuat;
+        NamSanXuat = namSanXuat;
+        GiaXe = giaXe;
+        MauXe = mauXe;
     }
 
     public int getId() {
@@ -29,46 +28,72 @@ public class PhuongTien {
         this.id = id;
     }
 
-    public String getHangsanxuat() {
-        return hangsanxuat;
+    public String getHangSanXuat() {
+        return HangSanXuat;
     }
 
-    public void setHangsanxuat(String hangsanxuat) {
-        this.hangsanxuat = hangsanxuat;
+    public void setHangSanXuat(String hangSanXuat) {
+        HangSanXuat = hangSanXuat;
     }
 
-    public int getYear() {
-        return year;
+    public String getNamSanXuat() {
+        return NamSanXuat;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setNamSanXuat(String namSanXuat) {
+        NamSanXuat = namSanXuat;
     }
 
-    public int getPrice() {
-        return price;
+    public double getGiaXe() {
+        return GiaXe;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setGiaXe(double giaXe) {
+        GiaXe = giaXe;
     }
 
-    public String getColor() {
-        return color;
+    public String getMauXe() {
+        return MauXe;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setMauXe(String mauXe) {
+        MauXe = mauXe;
+    }
+    Scanner scanner = new Scanner(System.in);
+
+
+    public void nhap() {
+        System.out.println("Nhập id phương tiện: ");
+        this.id = Integer.parseInt(scanner.nextLine());
+        System.out.println("Nhập hãng sản xuất phương tiện: ");
+        this.HangSanXuat = scanner.nextLine();
+        System.out.println("Nhập năm sản xuất phương tiện: ");
+        this.NamSanXuat = scanner.nextLine();
+        System.out.println("Nhập giá bán phương tiện: ");
+        this.GiaXe = Double.parseDouble(scanner.nextLine());
+        System.out.println("Nhập màu phương tiện: ");
+        this.MauXe = scanner.nextLine();
     }
 
     @Override
     public String toString() {
-        return "Thông tin xe: {" +
+        return "Phương tiện: {" +
                 "id=" + id +
-                ", hangsanxuat='" + hangsanxuat + '\'' +
-                ", year=" + year +
-                ", price=" + price +
-                ", color='" + color + '\'' +
+                ", HangSanXuat='" + HangSanXuat + '\'' +
+                ", NamSanXuat='" + NamSanXuat + '\'' +
+                ", GiaXe=" + GiaXe +
+                ", MauXe='" + MauXe + '\'' +
+                ", scanner=" + scanner +
                 '}';
+    }
+
+    public void xuat() {
+        System.out.println( "Phương tiện: {" +
+                "id=" + id +
+                ", HangSanXuat='" + HangSanXuat + '\'' +
+                ", NamSanXuat='" + NamSanXuat + '\'' +
+                ", GiaXe=" + GiaXe +
+                ", MauXe='" + MauXe + '\'' +
+                '}');
     }
 }

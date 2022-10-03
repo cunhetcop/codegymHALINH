@@ -20,7 +20,8 @@ public class Products {
         this.quantity = quantity;
         this.description = description;
     }
-    public void createProducts(){
+
+    public void createProducts() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập serial sản phẩm");
         this.serial = sc.nextLine();
