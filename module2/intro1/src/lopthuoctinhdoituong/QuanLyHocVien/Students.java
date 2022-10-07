@@ -82,7 +82,7 @@ public class Students implements Serializable {
                 ", age=" + age +
                 ", phone='" + phone + '\'' +
                 ", birthday=" + birthday +
-                ", classCG=" + classCG.toString() +
+                ", classCG=" + getClassCG().toString() +
                 '}';
     }
 }
