@@ -1,7 +1,6 @@
 package managers;
 
 import IO.ReadAndWrite;
-import models.AccountUser;
 import models.Cat;
 
 import java.io.File;
@@ -9,17 +8,17 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ManagerProduct {
-    File file = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/product.txt");
+    File fileProduct = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/product.txt");
     ReadAndWrite<Cat>readAndWrite  = new ReadAndWrite<>();
     ArrayList<Cat> CatList;
     Scanner sc = new Scanner(System.in);
 
     public ManagerProduct() {
-         CatList = readAndWrite.read(file);
+         CatList = readAndWrite.read(fileProduct);
     }
 
     public void showCat(){
-        CatList = readAndWrite.read(file);
+        CatList = readAndWrite.read(fileProduct);
         for (Cat cat : CatList) {
             System.out.println(cat);
         }
@@ -31,7 +30,7 @@ public class ManagerProduct {
 
     public void add(Cat cat){
         CatList.add(cat);
-        readAndWrite.write(file, CatList);
+        readAndWrite.write(fileProduct, CatList);
     }
     public int findIndexById(int id) {
         for (int i = 0; i < CatList.size(); i++) {

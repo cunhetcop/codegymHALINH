@@ -3,7 +3,6 @@ package managers;
 import IO.ReadAndWrite;
 import Validate.ValidateUser;
 import Views.MenuUser;
-import models.AccountAdmin;
 import models.AccountUser;
 import models.Cat;
 
@@ -12,12 +11,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ManagerUser {
-    File file = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/user.txt");
-    File file1 = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/giohang.txt");
+    File fileUser = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/user.txt");
+    File fileGiohang = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/giohang.txt");
     ReadAndWrite<AccountUser>readAndWrite = new ReadAndWrite<>();
     ReadAndWrite<Cat>readAndWrite2 = new ReadAndWrite<>();
     ArrayList<AccountUser> accountUsers;
-    ArrayList<Cat>giohang =readAndWrite2.read(file1);
+    ArrayList<Cat>giohang =readAndWrite2.read(fileGiohang);
 
     Scanner sc = new Scanner(System.in);
 
@@ -26,11 +25,11 @@ public class ManagerUser {
     ManagerProduct managerProduct;
 
     public ManagerUser() {
-        accountUsers = readAndWrite.read(file);
+        accountUsers = readAndWrite.read(fileUser);
     }
 
     public boolean login() {
-        accountUsers = readAndWrite.read(file);
+        accountUsers = readAndWrite.read(fileUser);
         try {
             System.out.println("Nhập username");
             String username = sc.nextLine();
@@ -70,11 +69,11 @@ public class ManagerUser {
         String role = ValidateUser.role();
 
         accountUsers.add(new AccountUser(name,age,telephone,email,username,password,role,giohang));
-        readAndWrite.write(file,accountUsers);
+        readAndWrite.write(fileUser,accountUsers);
     }
 
     public void showACC() {
-        accountUsers = readAndWrite.read(file);
+        accountUsers = readAndWrite.read(fileUser);
         for (int i = 0; i < accountUsers.size(); i++) {
             System.out.println(i + 1 + "." + "\n" + "ID:       " + accountUsers.get(i).getUsername() + "\n"
                     + "Password: " + accountUsers.get(i).getPassword() + "\n"
@@ -97,7 +96,7 @@ public class ManagerUser {
             }
         }
         System.out.println("Xóa tài khoản thành công");
-        readAndWrite.write(file , accountUsers);
+        readAndWrite.write(fileUser, accountUsers);
     }
 
     public void uyquyenAdmin(){
@@ -109,7 +108,7 @@ public class ManagerUser {
                 accountUsers.get(i).setRole("1");
             }
         }
-        readAndWrite.write(file , accountUsers);
+        readAndWrite.write(fileUser, accountUsers);
     }
 
     public void tuocquyenAdmin(){
@@ -121,7 +120,7 @@ public class ManagerUser {
                 accountUsers.get(i).setRole("0");
             }
         }
-        readAndWrite.write(file , accountUsers);
+        readAndWrite.write(fileUser, accountUsers);
     }
 
     public boolean checkUserName(String username) {
@@ -141,8 +140,8 @@ public class ManagerUser {
             }
 
         }
-        readAndWrite.write(file , accountUsers);
-        readAndWrite2.write(file1,giohang);
+        readAndWrite.write(fileUser, accountUsers);
+        readAndWrite2.write(fileGiohang,giohang);
     }
     public void removeProduct(){
         System.out.println("Nhập tên sản phẩm muốn xóa khỏi giỏ hàng");
@@ -155,7 +154,7 @@ public class ManagerUser {
 
         }
 //        readAndWrite.write(file,accountUsers);
-        readAndWrite2.write(file1,giohang);
+        readAndWrite2.write(fileGiohang,giohang);
     }
 
     public void showProduct(){
