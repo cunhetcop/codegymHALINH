@@ -31,7 +31,7 @@ Blog Page					/blog/index.html
 Blog Article (Photo)		/blog/item-photo.html
 Blog Article (Video)		/blog/item-video.html
 Catalog of Products			/store/index.html
-Product Page				/store/product.html
+Product Page				/store/cat.html
 About Page 					/about/index.html
 Checkout Page 				/checkout/index.html
 Contacts Page 				/contacts/index.html
@@ -61,7 +61,7 @@ For use Main Carousel and Carousel of Products You can plug in:
 /assets/css/carousel.css
 /assets/css/carousel.js
 
-/assets/css/carousel-product.css
-/assets/css/carousel-product.js
+/assets/css/carousel-cat.css
+/assets/css/carousel-cat.js
 
 -----------------------------------------------------------------------

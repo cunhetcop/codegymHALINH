@@ -1,11 +1,14 @@
-import java.util.ArrayList;
+import Views.MenuAdmin;
+import Views.MenuFirst;
+import Views.MenuUser;
+
+import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
-        ArrayList<Integer> month = new ArrayList<Integer>();
-        int i;
-        for( i = 0; i<month.size(); i++ ){
-            System.out.println("OK");
-        }
+        MenuFirst menuFirst = new MenuFirst();
+        menuFirst.menufirst();
+
     }
 }

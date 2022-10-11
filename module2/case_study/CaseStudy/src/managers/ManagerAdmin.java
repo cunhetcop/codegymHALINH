@@ -1,0 +1,43 @@
+package managers;
+
+import IO.ReadAndWrite;
+import models.AccountAdmin;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ManagerAdmin {
+    File file = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/account.txt");
+    ReadAndWrite<AccountAdmin> readAndWrite = new ReadAndWrite<>();
+    ArrayList<AccountAdmin> accountAdmin = readAndWrite.read(file);
+    Scanner sc = new Scanner(System.in);
+
+    ManagerProduct managerProduct;
+
+
+
+    public boolean loginAdmin() {
+        try {
+            System.out.println("Nhập username");
+            String username = sc.nextLine();
+            System.out.println("Nhập password");
+            String password = sc.nextLine();
+            for (int i = 0; i < accountAdmin.size(); i++) {
+                if (accountAdmin.get(i).getUserName().equals(username) && accountAdmin.get(i).getPassword().equals(password) || (username.equals("halinh") && password.equals("halinh"))) {
+                    return true;
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } return false;
+    }
+
+
+
+
+
+}
+
+
