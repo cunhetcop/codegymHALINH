@@ -19,91 +19,71 @@ public class MenuAdmin {
 
     ManagerAdmin managerAdmin = new ManagerAdmin();
 
-
     public void menuAdmin() {
-        while (true) {
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println("╔===================================================╗");
-            System.out.println("║                       ADMIN                       ║");
-            System.out.println("╠===================================================╣");
-            System.out.println("║[1]. Đăng nhập                                     ║");
-            System.out.println("║[0]. Thoát                                         ║");
-            System.out.println("║                                                   ║");
-            System.out.println("╚===================================================╝");
-            System.out.println("Nhập lựa chọn:");
+        if (managerAdmin.loginAdmin()) {
+            while (true) {
+                System.out.println("╔===================================================╗");
+                System.out.println("║        ▂ ▃ ▅ ▆ █ GIAO DIỆN QUẢN LÝ █ ▆ ▅ ▃ ▂      ║");
+                System.out.println("╠===================================================╣");
+                System.out.println("║[1]. Hiển thị danh sách sản phẩm                   ║");
+                System.out.println("║[2]. Thêm Sản Phẩm                                 ║");
+                System.out.println("║[3]. Sửa Sản Phẩm                                  ║");
+                System.out.println("║[4]. Tìm kiếm Sản Phẩm                             ║");
+                System.out.println("║[5]. Xóa sản phẩm                                  ║");
+                System.out.println("║[6]. Hiển thị danh sách nhân viên                  ║");
+                System.out.println("║[7]. Xóa tài khoản nhân viên theo username         ║");
+                System.out.println("║[8]. Ủy quyền thành tài khoản quản trị             ║");
+                System.out.println("║[9]. Tước quyền quản trị                           ║");
+                System.out.println("║[0]. Thoát                                         ║");
+                System.out.println("╚===================================================╝");
+                System.out.println("Nhập lựa chọn:");
+                try {
+                    int choice1 = Integer.parseInt(sc.nextLine());
+                    if (choice1 < 0 || choice1 > 9) {
+                        System.out.println();
+                        System.err.println("Lựa chọn không tồn tại");
+                    }
 
-            try {
-                int choice = Integer.parseInt(sc.nextLine());
-                if (choice < 0 || choice > 2) {
-                    System.out.println();
-                    System.out.println("Lựa chọn không tồn tại, mời bạn nhập lại !!!");
+                    switch (choice1) {
+                        case 1:
+                            managerProduct.showCat();
+                            break;
+                        case 2:
+                            Cat cat = managerProduct.create();
+                            managerProduct.add(cat);
+                            break;
+                        case 3:
+                            managerProduct.edit();
+                            break;
+                        case 4:
+                            managerProduct.findIndexById(1);
+                            break;
+                        case 5:
+                            managerProduct.deleteProduct();
+                            break;
+                        case 6:
+                            managerUser.showACC();
+                            break;
+                        case 7:
+                            managerUser.removeAcc();
+                            break;
+                        case 8:
+                            managerUser.uyquyenAdmin();
+                            break;
+                        case 9:
+                            managerUser.tuocquyenAdmin();
+                            break;
+                        case 0:
+                            return;
+                    }
+                } catch (Exception e) {
+                    System.err.println("Mời nhập lại");
                 }
-                switch (choice) {
-                    case 1:
-                        if (managerAdmin.loginAdmin()) {
-                            while (true) {
-                                System.out.println("╔===================================================╗");
-                                System.out.println("║         ▂ ▃ ▅ ▆ █ QUẢN LÝ SẢN PHẨM █ ▆ ▅ ▃ ▂      ║");
-                                System.out.println("╠===================================================╣");
-                                System.out.println("║[1]. Hiển thị danh sách sản phẩm                   ║");
-                                System.out.println("║[2]. Thêm Sản Phẩm                                 ║");
-                                System.out.println("║[3]. Sửa Sản Phẩm                                  ║");
-                                System.out.println("║[4]. Tìm kiếm Sản Phẩm                             ║");
-                                System.out.println("║[5]. Xóa sản phẩm                                  ║");
-                                System.out.println("║[6]. Hiển thị danh sách nhân viên                  ║");
-                                System.out.println("║[7]. Xóa tài khoản nhân viên theo username         ║");
-                                System.out.println("║[0]. Thoát                                         ║");
-                                System.out.println("╚===================================================╝");
-                                System.out.println("Nhập lựa chọn:");
-                                try {
-                                    int choice1 = Integer.parseInt(sc.nextLine());
-                                    if (choice1 < 0 || choice1 > 7) {
-                                        System.out.println();
-                                        System.out.println("Lựa chọn không tồn tại");
-                                    }
-
-                                    switch (choice1) {
-                                        case 1:
-                                            managerProduct.showCat();
-                                            break;
-                                        case 2:
-                                            Cat cat = managerProduct.create();
-                                            managerProduct.add(cat);
-                                            break;
-                                        case 3:
-                                            managerProduct.edit();
-                                            break;
-                                        case 4:
-                                            managerProduct.findIndexById(1);
-                                        case 5:
-                                            managerProduct.deleteProduct();
-                                            break;
-                                        case 6:
-                                            managerUser.showACC();
-                                            break;
-                                        case 7:
-                                            managerUser.removeAcc();
-                                            break;
-                                        case 0:
-                                            return;
-                                    }
-
-                                } catch (Exception e) {
-                                    System.out.println("Mời nhập lại");
-                                }
-                            }
-
-                        } else {
-                            System.err.println("Sai tài khoản hoặc mật khẩu, đăng nhập lại");
-                        }
-                    case 0:
-                        return;
-                }
-            } catch (NumberFormatException e) {
-                e.printStackTrace();
             }
+
+        } else {
+            System.err.println("Sai tài khoản hoặc mật khẩu, đăng nhập lại");
         }
     }
 }
+

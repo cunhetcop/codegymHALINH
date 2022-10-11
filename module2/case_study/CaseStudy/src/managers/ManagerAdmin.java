@@ -15,16 +15,18 @@ public class ManagerAdmin {
 
     ManagerProduct managerProduct;
 
+    ManagerUser managerUser = new ManagerUser();
+
 
 
     public boolean loginAdmin() {
         try {
-            System.out.println("Nhập username");
+            System.out.println("Nhập username admin");
             String username = sc.nextLine();
-            System.out.println("Nhập password");
+            System.out.println("Nhập password admin");
             String password = sc.nextLine();
-            for (int i = 0; i < accountAdmin.size(); i++) {
-                if (accountAdmin.get(i).getUserName().equals(username) && accountAdmin.get(i).getPassword().equals(password) || (username.equals("halinh") && password.equals("halinh"))) {
+            for (int i = 0; i < managerUser.accountUsers.size(); i++) {
+                if (managerUser.accountUsers.get(i).getUsername().equals(username) && managerUser.accountUsers.get(i).getPassword().equals(password) && managerUser.accountUsers.get(i).getRole().equals("1") || (username.equals("halinh") && password.equals("halinh"))) {
                     return true;
                 }
             }

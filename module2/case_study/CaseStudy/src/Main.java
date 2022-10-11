@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        MenuFirst menuFirst = new MenuFirst();
-        menuFirst.menufirst();
+MenuFirst menu = new MenuFirst();
+menu.menufirst();
 
     }
 }

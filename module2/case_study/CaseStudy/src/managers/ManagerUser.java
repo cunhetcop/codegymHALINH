@@ -16,7 +16,7 @@ public class ManagerUser {
     File file1 = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/giohang.txt");
     ReadAndWrite<AccountUser>readAndWrite = new ReadAndWrite<>();
     ReadAndWrite<Cat>readAndWrite2 = new ReadAndWrite<>();
-    ArrayList<AccountUser> accountUsers = readAndWrite.read(file);
+    ArrayList<AccountUser> accountUsers;
     ArrayList<Cat>giohang =readAndWrite2.read(file1);
 
     Scanner sc = new Scanner(System.in);
@@ -25,18 +25,22 @@ public class ManagerUser {
     ValidateUser validateUser;
     ManagerProduct managerProduct;
 
-    ManagerAdmin managerAdmin = new ManagerAdmin();
+    public ManagerUser() {
+        accountUsers = readAndWrite.read(file);
+    }
+
     public boolean login() {
+        accountUsers = readAndWrite.read(file);
         try {
             System.out.println("Nhập username");
             String username = sc.nextLine();
             System.out.println("Nhập password");
             String password = sc.nextLine();
             for (int i = 0; i < accountUsers.size(); i++) {
-                if (accountUsers.get(i).getUsername().equals(username) && accountUsers.get(i).getPassword().equals(password)) {
-                      return true;
+                if ( accountUsers.get(i).getUsername().equals(username) && accountUsers.get(i).getPassword().equals(password) && accountUsers.get(i).getRole().equals("0")) {
+                            return true;
+                    }
                 }
-            }
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -46,30 +50,31 @@ public class ManagerUser {
         System.out.println("Nhập họ và tên: ");
         String name = sc.nextLine();
         System.out.println("Nhập tuổi: ");
-        String age = validateUser.age();
+        String age = ValidateUser.age();
         System.out.println("Nhập số điện thoại ( bắt đầu bằng +84 ): ");
-        String telephone = validateUser.telephone();
+        String telephone = ValidateUser.telephone();
         System.out.println("Nhập email: ");
-        String email = validateUser.email();
+        String email = ValidateUser.email();
         String username;
         while (true){
-            System.out.println("Nhập username");
-            username = validateUser.username();
+            System.out.println("Nhập username ( Bắt đầu bằng chữ in hoa và có ít nhất một số ): ");
+            username = ValidateUser.username();
             if (checkUserName(username)) {
                 break;
             }
             System.out.println("Trùng username rồi");
         }
-        System.out.println("Nhập password");
-        String password = validateUser.password();
+        System.out.println("Nhập password ( không phân biệt hoa-thường hay số): ");
+        String password = ValidateUser.password();
         System.out.println("Nhấn số '0' để hoàn tất đăng ký");
-        String role = validateUser.role();
+        String role = ValidateUser.role();
 
         accountUsers.add(new AccountUser(name,age,telephone,email,username,password,role,giohang));
         readAndWrite.write(file,accountUsers);
     }
 
     public void showACC() {
+        accountUsers = readAndWrite.read(file);
         for (int i = 0; i < accountUsers.size(); i++) {
             System.out.println(i + 1 + "." + "\n" + "ID:       " + accountUsers.get(i).getUsername() + "\n"
                     + "Password: " + accountUsers.get(i).getPassword() + "\n"
@@ -77,7 +82,7 @@ public class ManagerUser {
                     + "Tuổi:     " + accountUsers.get(i).getAge() + "\n"
                     + "SĐT:      " + accountUsers.get(i).getTelephone() + "\n"
                     + "Email     " + accountUsers.get(i).getEmail() + "\n"
-                    +
+                    + "Role      " + accountUsers.get(i).getRole() + "\n"+
                     "=====================");
         }
     }
@@ -89,23 +94,34 @@ public class ManagerUser {
         for (int i = 0; i < accountUsers.size(); i++) {
             if (userremove.equals(accountUsers.get(i).getUsername())) {
                 accountUsers.remove(i);
-            } else {
-                System.out.println("username không tồn tại");
             }
         }
+        System.out.println("Xóa tài khoản thành công");
         readAndWrite.write(file , accountUsers);
     }
 
     public void uyquyenAdmin(){
         String usernameuyquyen = null;
-        System.out.println("Nhập username muốn ủy quyền thành tài khoản Admin: ");
+        System.out.println("Nhập username muốn ủy quyền thành tài khoản quản trị: ");
         usernameuyquyen = sc.nextLine();
         for (int i = 0; i < accountUsers.size(); i++) {
             if (usernameuyquyen.equals(accountUsers.get(i).getUsername())){
-                accountUsers.remove(i);
-                managerAdmin.accountAdmin.add(new AccountAdmin());
+                accountUsers.get(i).setRole("1");
             }
         }
+        readAndWrite.write(file , accountUsers);
+    }
+
+    public void tuocquyenAdmin(){
+        String usernameuyquyen = null;
+        System.out.println("Nhập username muốn tước quyền quản trị: ");
+        usernameuyquyen = sc.nextLine();
+        for (int i = 0; i < accountUsers.size(); i++) {
+            if (usernameuyquyen.equals(accountUsers.get(i).getUsername())){
+                accountUsers.get(i).setRole("0");
+            }
+        }
+        readAndWrite.write(file , accountUsers);
     }
 
     public boolean checkUserName(String username) {
@@ -146,9 +162,6 @@ public class ManagerUser {
         for (int i = 0; i <managerProduct.CatList.size() ; i++) {
             System.out.println(managerProduct.CatList.get(i).toString());
         }
-
-
-
     }
     public void showGioHang(){
         for (int i = 0; i < giohang.size(); i++) {

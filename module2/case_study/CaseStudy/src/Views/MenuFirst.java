@@ -1,35 +1,56 @@
 package Views;
 
+import managers.ManagerAdmin;
+import managers.ManagerUser;
+
 import java.util.Scanner;
 
 public class MenuFirst {
     Scanner sc = new Scanner(System.in);
     MenuAdmin menuAdmin = new MenuAdmin();
     MenuUser menuUser = new MenuUser();
+    ManagerUser managerUser = new ManagerUser();
 
-    public void menufirst() {
+    ManagerAdmin managerAdmin = new ManagerAdmin();
 
-        do {
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println("╔===================================================╗");
-            System.out.println("║              CHỌN VAI TRÒ ĐĂNG NHẬP               ║");
-            System.out.println("╠===================================================╣");
-            System.out.println("║[1]. ADMIN                                         ║");
-            System.out.println("║[2]. KHÁCH HÀNG                                    ║");
-            System.out.println("╚===================================================╝");
-            System.out.println("Nhập lựa chọn:");
-            int choice = Integer.parseInt(sc.nextLine());
-            switch (choice) {
-                case 1:
-                    menuAdmin.menuAdmin();
-                    break;
-                case 2:
-                    menuUser.menuUser();
-                    break;
-            }
+    public void menufirst(){
+            do {
+                System.out.println();
+                System.out.println();
+                System.out.println();
+                System.out.println("╔===================================================╗");
+                System.out.println("║         CHÀO MỪNG ĐẾN VỚI TRAI MÈO KIMCHI         ║");
+                System.out.println("╠===================================================╣");
+                System.out.println("║[1]. ĐĂNG NHẬP                                     ║");
+                System.out.println("║[2]. ĐĂNG KÝ                                       ║");
+                System.out.println("║[3]. ĐĂNG NHẬP QUẢN TRỊ VIÊN                       ║");
+                System.out.println("║[0]. THOÁT                                         ║");
+                System.out.println("╚===================================================╝");
+                System.out.println("Nhập lựa chọn:");
+                try {
+                    int choice = Integer.parseInt(sc.nextLine());
+                    if (choice < 0 || choice > 3) {
+                        System.out.println();
+                        System.out.println("Lựa chọn không tồn tại, mời bạn nhập lại !!!");
+                    }
+                switch (choice) {
+                    case 1:
+                        menuUser.menuUser();
+                        break;
+                    case 2:
+                        managerUser.register();
+                        break;
+                    case 3:
+                        menuAdmin.menuAdmin();
+                        break;
+                    case 0:
+                        System.exit(0);
+                        break;
+                }
 
+            } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                } ;
         } while (true);
     }
 }

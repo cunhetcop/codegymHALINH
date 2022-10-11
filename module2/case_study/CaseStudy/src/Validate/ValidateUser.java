@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class ValidateUser {
     public static final String regexname = "/[^a-z0-9A-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễếệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]/u";
     public static final String regexage = "[0-9]{1,2}";
-    public static final String regextelephone = "[+84][0-9]{11}";
+    public static final String regextelephone = "[+84][0-9]{3,15}";
     public static final String regexemail = "^[a-zA-Z]+[0-9_a-zA-z.]*@([a-z]+\\.[a-z]+)+";
     public static final String regexusername = "[A-Z][a-z]{1,9}[0-9]{1,9}";
     public static final String regexpassword = "[A-Za-z0-9]+";

@@ -10,11 +10,16 @@ import java.util.Scanner;
 
 public class ManagerProduct {
     File file = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/product.txt");
-    ReadAndWrite<Cat>readAndWrite = new ReadAndWrite<>();
-    ArrayList<Cat> CatList = readAndWrite.read(file);
+    ReadAndWrite<Cat>readAndWrite  = new ReadAndWrite<>();
+    ArrayList<Cat> CatList;
     Scanner sc = new Scanner(System.in);
 
+    public ManagerProduct() {
+         CatList = readAndWrite.read(file);
+    }
+
     public void showCat(){
+        CatList = readAndWrite.read(file);
         for (Cat cat : CatList) {
             System.out.println(cat);
         }
