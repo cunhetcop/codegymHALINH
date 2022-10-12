@@ -1,5 +1,5 @@
 package lopthuoctinhdoituong.QuanLySanPham.manager;
-import lopthuoctinhdoituong.QuanLyPhuongTien.PhuongTien;
+
 import lopthuoctinhdoituong.QuanLySanPham.io.IOProduct;
 import lopthuoctinhdoituong.QuanLySanPham.product.Product;
 
@@ -19,7 +19,7 @@ public class Manager {
     Scanner scanner = new Scanner(System.in);
     private ArrayList<Product> products = new ArrayList<>();
 
-    public void menu(){
+    public void menu() {
         int choice;
         do {
             System.out.println("╔===================================================╗");
@@ -36,55 +36,60 @@ public class Manager {
             System.out.println("║[0]. Thoát                                         ║");
             System.out.println("╚===================================================╝");
             System.out.println("Nhập lựa chọn:");
+            try {
+                choice = Integer.parseInt(scanner.nextLine());
+                if (choice < 0 || choice > 8) {
+                    System.out.println();
+                    System.out.println("Lựa chọn không tồn tại, mời bạn nhập lại !!!");
+                }
+                switch (choice) {
+                    case 1:
+                        this.show();
+                        break;
+                    case 2:
+                        this.add();
+                        break;
+                    case 3:
+                        this.update();
+                        break;
+                    case 4:
+                        this.delete();
+                        break;
+                    case 5:
+                        this.sort();
+                        break;
+                    case 6:
+                        this.findTheMostExpensiveProduct();
+                        break;
+                    case 7:
+                        this.ReadFromFile();
+                        break;
+                    case 8:
+                        this.WriteToFile();
+                        break;
+                    case 0:
+                        return;
 
-            choice = Integer.parseInt(scanner.nextLine());
-
-            switch (choice) {
-                case 1:
-                    this.show();
-                    break;
-                case 2:
-                    this.add();
-                    break;
-                case 3:
-                    this.update();
-                    break;
-                case 4:
-                    this.delete();
-                    break;
-                case 5:
-                    this.sort();
-                    break;
-                case 6:
-                    this.findTheMostExpensiveProduct();
-                    break;
-                case 7:
-                    this.ReadFromFile();
-                    break;
-                case 8:
-                    this.WriteToFile();
-                    break;
-                case 0:
-                    return;
-
+                }
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
             }
         } while (true);
     }
-
 
     public Product createProduct() {
         int IDproduct;
         int index;
         while (true) {
-            try{
+            try {
                 System.out.println("Nhập id sản phẩm :");
                 IDproduct = Integer.parseInt(scanner.nextLine());
-                index = checkID( IDproduct);
+                index = checkID(IDproduct);
                 if (index == -1) {
                     break;
                 }
 
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("ID phải là một số nguyên");
                 continue;
             }
@@ -101,7 +106,8 @@ public class Manager {
             } catch (Exception e) {
                 System.err.println("Giá sản phẩm là số, không được chứa chữ");
                 continue;
-            } break;
+            }
+            break;
         }
 
         int quantity;
@@ -112,7 +118,8 @@ public class Manager {
             } catch (Exception e) {
                 System.err.println("Số lượng là số nguyên, không được chứa chữ");
                 continue;
-            } break;
+            }
+            break;
         }
 
         System.out.println("Nhập mô tả sản phẩm: ");
@@ -125,7 +132,7 @@ public class Manager {
 
     public int checkID(int IDproduct) {
         for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getIDproduct()==IDproduct) {
+            if (products.get(i).getIDproduct() == IDproduct) {
                 return i;
             }
         }
@@ -144,18 +151,20 @@ public class Manager {
     }
 
     public void update() {
-        int IDproduct = 0;
-                while (true) {
-                    try {
-                        System.out.println("Nhập ID sản phẩm bạn muốn sửa: ");
-                        IDproduct = Integer.parseInt(scanner.nextLine());
-                    } catch (Exception e) {
-                        System.err.println("ID chỉ là số nguyên, không chứa chữ cái");
-                    }break;
-                }
+        int IDproduct;
+        while (true) {
+            try {
+                System.out.println("Nhập ID sản phẩm muốn sửa: ");
+                IDproduct = Integer.parseInt(scanner.nextLine());
+                break;
+            } catch (Exception e) {
+                System.err.println("ID chỉ là số nguyên, không chứa chữ cái");
+            }
+        }
         for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getIDproduct()==IDproduct) {
+            if (products.get(i).getIDproduct() == IDproduct) {
                 products.set(i, createProduct());
+                return;
             }
         }
         System.err.println("Không tồn tại ID này");
@@ -169,10 +178,11 @@ public class Manager {
                 IDproduct = Integer.parseInt(scanner.nextLine());
             } catch (Exception e) {
                 System.err.println("ID chỉ là số nguyên, không chứa chữ cái");
-            }break;
+            }
+            break;
         }
         for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getIDproduct()==IDproduct) {
+            if (products.get(i).getIDproduct() == IDproduct) {
                 products.remove(i);
                 break;
             }
@@ -186,82 +196,58 @@ public class Manager {
         System.out.println("2. Giá giảm dần");
         System.out.println("Nhập số để lựa chọn: ");
         do {
-            if (choose > 2) System.err.println("Chỉ chọn 1 hoặc 2");
+            if (choose > 2) {
+                System.err.println("Chỉ chọn 1 hoặc 2");
+            }
             choose = Integer.parseInt(scanner.nextLine());
         } while (choose > 2);
 
         switch (choose) {
-            case 1 -> sapXepTangDan();
-            case 2 -> sapXepGiamDan();
+            case 1:
+                priceMinToMax();
+                break;
+            case 2:
+                priceMaxToMin();
+                break;
         }
     }
 
-
-    public void ascending() {
-        Product temp;
-        for (int i = 0; i < products.size() - 1; i++) {
-            for (int j = i + 1; j < products.size(); j++) {
-                if (products.get(i).getPrice() > products.get(j).getPrice()) {
-                    temp = products.get(i);
-                    products.set(i, products.get(j));
-                    products.set(j, temp);
-                }
-            }
-        }
-        show();
-
-    }
-
-    public void decrease() {
-
-        Product temp;
-        for (int i = 0; i < products.size() - 1; i++) {
-            for (int j = i + 1; j < products.size(); j++) {
-                if (products.get(i).getPrice() < products.get(j).getPrice()) {
-                    temp = products.get(i);
-                    products.set(i, products.get(j));
-                    products.set(j, temp);
-                }
-            }
-        }
-
-        show();
-    }
-    void sapXepGiamDan() {
+    public void priceMaxToMin() {
         Comparator<Product> com1 = new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
-                if (o1.getPrice()< o2.getPrice()){
+                if (o1.getPrice() < o2.getPrice()) {
                     return -1;
                 } else if (o1.getPrice() == o2.getPrice()) {
                     return 0;
-                }else {
+                } else {
                     return 1;
                 }
             }
         };
-        Collections.sort(products,com1);
+        Collections.sort(products, com1);
         Collections.reverse(products);
         this.show();
     }
 
-    void sapXepTangDan() {
+    public void priceMinToMax() {
         Comparator<Product> com1 = new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
-                if (o1.getPrice()> o2.getPrice()){
+                if (o1.getPrice() > o2.getPrice()) {
                     return -1;
                 } else if (o1.getPrice() == o2.getPrice()) {
                     return 0;
-                }else {
+                } else {
                     return 1;
                 }
             }
         };
-        Collections.sort(products,com1);
+        Collections.sort(products, com1);
         Collections.reverse(products);
         this.show();
     }
+
     public void findTheMostExpensiveProduct() {
         double max = products.get(0).getPrice();
         for (int i = 1; i < products.size(); i++) {
@@ -280,7 +266,7 @@ public class Manager {
 
     public void ReadFromFile() {
         products = IOProduct.read();
-        System.out.println(ANSI_GREEN );
+        System.out.println(ANSI_GREEN);
         System.out.println("Đọc file thành công");
         System.out.println(ANSI_RESET);
 
@@ -289,7 +275,7 @@ public class Manager {
 
     public void WriteToFile() {
         IOProduct.write(products);
-        System.out.println(ANSI_GREEN );
+        System.out.println(ANSI_GREEN);
         System.out.println("Ghi file thành công");
         System.out.println(ANSI_RESET);
     }

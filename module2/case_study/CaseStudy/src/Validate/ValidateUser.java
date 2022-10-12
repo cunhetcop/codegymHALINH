@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class ValidateUser {
     public static final String regexname = "[^0-9]{1,20}"; //Một chỗi dài từ 1-20 và không chấp nhận bất kì số nào từ 0-9
-    public static final String regexage = "[0-9]{1,2}"; // số 0-9 và có độ dài 1-2
+    public static final String regexage = "[^a-z][0-9]{1,2}"; // số 0-9 và có độ dài 1-2 và không chấp nhận chữ cái từ a-z
     public static final String regextelephone = "[+84][0-9]{3,15}";
     public static final String regexemail = "^[a-zA-Z]+[0-9_a-zA-z.]*@([a-z]+\\.[a-z]+)+";
     public static final String regexusername = "[A-Z][a-z]{1,9}[0-9]{1,9}";
@@ -25,7 +25,7 @@ public class ValidateUser {
             if (matcher.matches()){
                 return Name;
             }
-            System.out.println("Tên không được chứa số");
+            System.err.println("Tên không được chứa số");
         }
     }
     public static String age(){
@@ -36,7 +36,7 @@ public class ValidateUser {
             if (matcher.matches()){
                 return Age;
             }
-            System.out.println("Nhập sai định dạng rồi ,nhập lại đi");
+            System.err.println("Tuổi phải là số, không chứa chữ cái");
         }
     }
     public static String telephone(){
@@ -48,7 +48,7 @@ public class ValidateUser {
                 return Telephone;
 
             }
-            System.out.println("Nhập sai định dạng rồi ,nhập lại đi");
+            System.err.println("Sai định dạng");
         }
     }
     public static String email(){
@@ -59,7 +59,7 @@ public class ValidateUser {
             if (matcher.matches()){
                 return Email;
             }
-            System.out.println("Nhập sai định dạng rồi ,nhập lại đi");
+            System.err.println("Sai định dạng");
         }
     }
     public static String username(){
@@ -70,7 +70,7 @@ public class ValidateUser {
             if(matcher.matches()){
                 return Username;
             }
-            System.out.println("Nhập sai định dạng rồi ,nhập lại đi");
+            System.err.println("Sai định dạng");
         }
     }
 
@@ -82,7 +82,7 @@ public class ValidateUser {
             if(matcher.matches()){
                 return Password;
             }
-            System.out.println("Nhập sai định dạng rồi ,nhập lại đi");
+            System.err.println("Sai định dạng");
         }
     }
 

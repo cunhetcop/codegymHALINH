@@ -31,7 +31,7 @@ public class MenuUser {
                 System.out.println("Nhập lựa chọn:");
                 try {
                     int choice1 = Integer.parseInt(sc.nextLine());
-                    if (choice1 < 0 || choice1 > 5) {
+                    if (choice1 < 0 || choice1 > 4) {
                         System.out.println();
                         System.out.println("Lựa chọn không tồn tại, mời bạn nhập lại !!!");
                     }

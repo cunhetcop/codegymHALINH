@@ -13,18 +13,19 @@ import java.util.Scanner;
 public class ManagerUser {
     File fileUser = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/user.txt");
     ArrayList<AccountUser> accountUsers;
+
     public ManagerUser() {
         accountUsers = readAndWrite.read(fileUser);
     }
-    File fileGiohang = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/giohang.txt");
-    ReadAndWrite<AccountUser>readAndWrite = new ReadAndWrite<>();
-    ReadAndWrite<Cat>readAndWrite2 = new ReadAndWrite<>();
 
-    ArrayList<Cat>giohang = readAndWrite2.read(fileGiohang);
+    File fileGiohang = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/giohang.txt");
+    ReadAndWrite<AccountUser> readAndWrite = new ReadAndWrite<>();
+    ReadAndWrite<Cat> readAndWrite2 = new ReadAndWrite<>();
+
+    ArrayList<Cat> giohang = readAndWrite2.read(fileGiohang);
 
     Scanner sc = new Scanner(System.in);
     ManagerProduct managerProduct = new ManagerProduct();
-
 
 
     public boolean login() {
@@ -35,16 +36,19 @@ public class ManagerUser {
             System.out.println("Nhập password");
             String password = sc.nextLine();
             for (int i = 0; i < accountUsers.size(); i++) {
-                if ( accountUsers.get(i).getUsername().equals(username) && accountUsers.get(i).getPassword().equals(password) && accountUsers.get(i).getRole().equals("0")) {
-                            return true;
-                    }
+                if (accountUsers.get(i).getUsername().equals(username) && accountUsers.get(i).getPassword().equals(password) && accountUsers.get(i).getRole().equals("0")) {
+                    return true;
                 }
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
-        } return false;
+        }
+        return false;
     }
-    public void register(){
+
+    public void register() {
+        accountUsers = readAndWrite.read(fileUser);
         System.out.println("Nhập họ và tên: ");
         String name = sc.nextLine();
         System.out.println("Nhập tuổi: ");
@@ -54,7 +58,7 @@ public class ManagerUser {
         System.out.println("Nhập email: ");
         String email = ValidateUser.email();
         String username;
-        while (true){
+        while (true) {
             System.out.println("Nhập username ( Bắt đầu bằng chữ in hoa và có ít nhất một số ): ");
             username = ValidateUser.username();
             if (checkUserName(username)) {
@@ -67,8 +71,8 @@ public class ManagerUser {
         System.out.println("Nhấn số '0' để hoàn tất đăng ký");
         String role = ValidateUser.role();
 
-        accountUsers.add(new AccountUser(name,age,telephone,email,username,password,role,giohang));
-        readAndWrite.write(fileUser,accountUsers);
+        accountUsers.add(new AccountUser(name, age, telephone, email, username, password, role, giohang));
+        readAndWrite.write(fileUser, accountUsers);
     }
 
     public void showACC() {
@@ -80,52 +84,60 @@ public class ManagerUser {
                     + "Tuổi:     " + accountUsers.get(i).getAge() + "\n"
                     + "SĐT:      " + accountUsers.get(i).getTelephone() + "\n"
                     + "Email     " + accountUsers.get(i).getEmail() + "\n"
-                    + "Role      " + accountUsers.get(i).getRole() + "\n"+
+                    + "Role      " + accountUsers.get(i).getRole() + "\n" +
                     "=====================");
         }
     }
 
     public void removeAcc() {
         accountUsers = readAndWrite.read(fileUser);
-        String userremove = null;
         System.out.println("Nhập username muốn xóa");
-        userremove = sc.nextLine();
+        String userremove = sc.nextLine();
         for (int i = 0; i < accountUsers.size(); i++) {
-            if (userremove.equals(accountUsers.get(i).getUsername())) {
+            if (accountUsers.get(i).getUsername().equals(userremove)) {
                 accountUsers.remove(i);
+                System.out.println("Xóa tài khoản thành công");
+                readAndWrite.write(fileUser, accountUsers);
+                return;
             }
         }
-        System.out.println("Xóa tài khoản thành công");
-        readAndWrite.write(fileUser, accountUsers);
+        System.err.println("Tài khoản không tồn tại");
     }
 
-    public void uyquyenAdmin(){
+    public void uyquyenAdmin() {
+        accountUsers = readAndWrite.read(fileUser);
         String usernameuyquyen = null;
         System.out.println("Nhập username muốn ủy quyền thành tài khoản quản trị: ");
         usernameuyquyen = sc.nextLine();
         for (int i = 0; i < accountUsers.size(); i++) {
-            if (usernameuyquyen.equals(accountUsers.get(i).getUsername())){
+            if (accountUsers.get(i).getUsername().equals(usernameuyquyen)) {
                 accountUsers.get(i).setRole("1");
+                System.out.println("Ủy quyền thành công");
+                readAndWrite.write(fileUser, accountUsers);
+                return;
             }
         }
-        System.out.println("Ủy quyền thành công");
-        readAndWrite.write(fileUser, accountUsers);
+        System.err.println("Không tồn tại username này");
     }
 
-    public void tuocquyenAdmin(){
+    public void tuocquyenAdmin() {
+        accountUsers = readAndWrite.read(fileUser);
         String usernameuyquyen = null;
         System.out.println("Nhập username muốn tước quyền quản trị: ");
         usernameuyquyen = sc.nextLine();
         for (int i = 0; i < accountUsers.size(); i++) {
-            if (usernameuyquyen.equals(accountUsers.get(i).getUsername())){
+            if ((accountUsers.get(i).getUsername().equals(usernameuyquyen))) {
                 accountUsers.get(i).setRole("0");
+                System.out.println("Tước quyền thành công");
+                readAndWrite.write(fileUser, accountUsers);
+                return;
             }
         }
-        System.out.println("Tước quyền thành công");
-        readAndWrite.write(fileUser, accountUsers);
+        System.err.println("Không tồn tại username này");
     }
 
     public boolean checkUserName(String username) {
+        accountUsers = readAndWrite.read(fileUser);
         for (int i = 0; i < accountUsers.size(); i++) {
             if (accountUsers.get(i).getUsername().equals(username)) {
                 return false;
@@ -134,37 +146,38 @@ public class ManagerUser {
         return true;
     }
 
-    public void buyProduct(){
+    public void buyProduct() {
         System.out.println("Nhập tên sản phẩm muốn thêm vào giỏ hàng");
-        String nameCaterory= sc.nextLine();
+        String nameCaterory = sc.nextLine();
         for (int i = 0; i < managerProduct.CatList.size(); i++) {
-            if(managerProduct.CatList.get(i).getNameCat().equals(nameCaterory)){
+            if (managerProduct.CatList.get(i).getNameCat().equals(nameCaterory)) {
                 giohang.add(managerProduct.CatList.get(i));
+                System.out.println("Thêm vào giỏ hàng thành công");
                 readAndWrite.write(fileUser, accountUsers);
-                readAndWrite2.write(fileGiohang,giohang);
+                readAndWrite2.write(fileGiohang, giohang);
+                return;
             }
-        } System.err.println("Không tồn tại sản phẩm này trong giỏ hàng");
-
+        }
+        System.err.println("Không tồn tại sản phẩm này");
     }
-    public void removeProduct(){
+
+    public void removeProduct() {
+        accountUsers = readAndWrite.read(fileUser);
         System.out.println("Nhập tên sản phẩm muốn xóa khỏi giỏ hàng");
-        String nameCaterory= sc.nextLine();
+        String nameCaterory = sc.nextLine();
         for (int i = 0; i < giohang.size(); i++) {
-            if(giohang.get(i).getNameCat().equals(nameCaterory)){
+            if (giohang.get(i).getNameCat().equals(nameCaterory)) {
                 giohang.remove(giohang.get(i));
+                System.out.println("Xóa thành công");
                 readAndWrite.write(fileUser, accountUsers);
-                readAndWrite2.write(fileGiohang,giohang);
+                readAndWrite2.write(fileGiohang, giohang);
+                return;
             }
-        } System.err.println("Không tồn tại sản phẩm này trong giỏ hàng");
-
+        }
+        System.err.println("Không tồn tại sản phẩm này");
     }
 
-//    public void showProduct(){
-//        for (int i = 0; i <managerProduct.CatList.size() ; i++) {
-//            System.out.println(managerProduct.CatList.get(i).toString());
-//        }
-//    }
-    public void showGioHang(){
+    public void showGioHang() {
         giohang = readAndWrite2.read(fileGiohang);
         for (int i = 0; i < giohang.size(); i++) {
             System.out.println(giohang.get(i));
@@ -173,7 +186,7 @@ public class ManagerUser {
     }
 
 
-    public double tongTien(){
+    public double tongTien() {
         double tongTien = 0.0;
 
         for (int i = 0; i < giohang.size(); i++) {

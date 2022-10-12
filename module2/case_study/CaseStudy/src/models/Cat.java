@@ -6,14 +6,14 @@ public class Cat implements Serializable {
     private int idCat;
     private String nameCat;
 
-    private double price;
+    private int price;
     private int amount;
     private String describe;
 
     public Cat() {
     }
 
-    public Cat(int idCat, String nameCat, double price, int amount, String describe) {
+    public Cat(int idCat, String nameCat, int price, int amount, String describe) {
         this.idCat = idCat;
         this.nameCat = nameCat;
         this.price = price;
@@ -37,11 +37,11 @@ public class Cat implements Serializable {
         this.nameCat = nameCat;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

@@ -1,0 +1,5 @@
+1, Chim, 50.0, 1, Chim Sẻ
+2, Mèo, 100.0, 1, Mèo Mun
+3, Chó, 30.0, 1, Chó Ngao
+4, Chuột, 60.0, 1, Chuột Trù
+5, Khỉ, 40.0, 1, Khỉ đầu chó

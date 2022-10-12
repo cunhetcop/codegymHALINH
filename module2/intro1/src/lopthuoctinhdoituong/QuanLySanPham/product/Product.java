@@ -70,10 +70,8 @@ public class Product {
     }
 
     public String in() {
-        return IDproduct + ", " + name +
-                ", " + price +
-                ", " + quantity +
-                ", " + describe;
+        return
+                "ID=" + IDproduct + ", Tên Mèo= '" + name + '\'' + ", Giá= " + price + ", Số lượng= " + quantity + ", Mô tả= '" + describe + '\'';
     }
-
 }
+

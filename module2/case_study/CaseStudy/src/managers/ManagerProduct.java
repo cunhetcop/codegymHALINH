@@ -6,6 +6,8 @@ import models.Cat;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class ManagerProduct {
@@ -15,13 +17,13 @@ public class ManagerProduct {
     Scanner sc = new Scanner(System.in);
 
     public void showCat(){
-        CatList = readAndWrite.read(fileProduct);
         for (Cat cat : CatList) {
-            System.out.println(cat);
+            System.out.println(cat.toString());
         }
     }
 
-    public void add(Cat cat){
+    public void add(){
+        Cat cat = create();
         CatList.add(cat);
         readAndWrite.write(fileProduct, CatList);
     }
@@ -32,6 +34,10 @@ public class ManagerProduct {
             }
         }
         return -1;
+    }
+
+    public void timkiemSP(){
+
     }
 
     public Cat create() {
@@ -47,23 +53,23 @@ public class ManagerProduct {
             }
 
             } catch (Exception e){
-                System.out.println("ID phải là một số nguyên");
+                System.err.println("ID phải là một số nguyên");
                 continue;
             }
-            System.out.println("Nhập trùng id rồi.");
+            System.err.println("Nhập trùng id rồi.");
         }
 
                 String nameCaterory =null;
                 System.out.println("Nhập name");
                 nameCaterory = ValidateUser.name();
 
-        double price;
+        int price;
         while (true) {
             try {
-                System.out.println("Nhập price");
-                price = Double.parseDouble(sc.nextLine());
+                System.out.println("Nhập giá");
+                price = Integer.parseInt(sc.nextLine());
             } catch (Exception e) {
-                System.out.println("Giá sản phẩm là số, không được chứa chữ");
+                System.err.println("Giá sản phẩm là số, không được chứa chữ");
                 continue;
             } break;
         }
@@ -73,7 +79,7 @@ public class ManagerProduct {
                 System.out.println("Nhập số lượng");
                 amount = Integer.parseInt(sc.nextLine());
             } catch (Exception e) {
-                System.out.println("Số lượng là số nguyên, không được chứa chữ");
+                System.err.println("Số lượng là số nguyên, không được chứa chữ");
                 continue;
             } break;
         }
@@ -81,42 +87,101 @@ public class ManagerProduct {
         System.out.println("nhập mô tả");
         String  describe = sc.nextLine();
 
-        return new Cat(idProduct,nameCaterory,price,amount,describe);
+        Cat cat = new Cat(idProduct,nameCaterory,price,amount,describe);
+        System.out.println(cat);
+        return cat;
+
     }
 
     public void edit() {
-        int IDproduct = 0;
+        CatList = readAndWrite.read(fileProduct);
+        int IDproduct;
         while (true) {
             try {
-                System.out.println("Nhập ID sản phẩm bạn muốn sửa: ");
+                System.out.println("Nhập ID sản phẩm muốn sửa: ");
                 IDproduct = Integer.parseInt(sc.nextLine());
+                break;
             } catch (Exception e) {
                 System.err.println("ID chỉ là số nguyên, không chứa chữ cái");
-            }break;
+            }
         }
-            for (int i = 0; i < CatList.size(); i++) {
-                if (i == IDproduct) {
+        for (int i = 0; i < CatList.size(); i++) {
+                if (CatList.get(i).getIdCat() == IDproduct) {
                     CatList.set(i, create());
+                    System.out.println("Cập nhật thành công");
+                    readAndWrite.write(fileProduct, CatList);
+                    return;
                 }
             }
         System.err.println("Không tồn tại ID này");
         }
 
     public void deleteProduct(){
-        int IDproduct = 0;
+        CatList = readAndWrite.read(fileProduct);
+        int IDproduct;
         while (true) {
             try {
                 System.out.println("Nhập ID sản phẩm bạn muốn xóa: ");
                 IDproduct = Integer.parseInt(sc.nextLine());
+                break;
             } catch (Exception e) {
                 System.err.println("ID chỉ là số nguyên, không chứa chữ cái");
-            }break;
+            }
         }
         for (int i = 0; i < CatList.size() ; i++) {
             if (CatList.get(i).getIdCat() == IDproduct){
                 CatList.remove(i);
-                break;
+                System.out.println("Xóa thành công");
+                readAndWrite.write(fileProduct, CatList);
+                return;
             }
-        } System.err.println("ID không tồn tại");
+        }
+        System.err.println("Không tồn tại ID này");
+    }
+    public void priceMaxToMin() {
+        Comparator<Cat> com1 = new Comparator<Cat>() {
+            @Override
+            public int compare(Cat o1, Cat o2) {
+                if (o1.getPrice() < o2.getPrice()){
+                    return -1;
+                } else if (o1.getPrice() == o2.getPrice()) {
+                    return 0;
+                }else {
+                    return 1;
+                }
+            }
+        };
+        Collections.sort(CatList,com1);
+        Collections.reverse(CatList);
+        this.showCat();
+    }
+    public void priceMinToMax() {
+        Comparator<Cat> com1 = new Comparator<Cat>() {
+            @Override
+            public int compare(Cat o1, Cat o2) {
+                if (o1.getPrice()> o2.getPrice()){
+                    return -1;
+                } else if (o1.getPrice() == o2.getPrice()) {
+                    return 0;
+                }else {
+                    return 1;
+                }
+            }
+        };
+        Collections.sort(CatList,com1);
+        Collections.reverse(CatList);
+        this.showCat();
+    }
+    public void timSP(){
+        String tenSP;
+        System.out.println("Nhập tên sản phẩm muốn tìm");
+        tenSP = sc.nextLine();
+        for (int i = 0; i < CatList.size(); i++) {
+            if (CatList.get(i).getNameCat().contains(tenSP)){
+                System.out.println(CatList.get(i).toString());
+                return;
+            }
+        }
+        System.err.println("Không tồn tại trong danh sách");
     }
 }
