@@ -22,7 +22,7 @@ public class MenuUser {
                 System.out.println("║       ▂ ▃ ▅ ▆ █ GIAO DIỆN NGƯỜI DÙNG █ ▆ ▅ ▃ ▂    ║");
                 System.out.println("╠===================================================╣");
                 System.out.println("║[1]. Hiển thị danh sách sản phẩm                   ║");
-                System.out.println("║[2]. Thêm Sản Phẩm                                 ║");
+                System.out.println("║[2]. Thêm Sản Phẩm vào giỏ hàng                    ║");
                 System.out.println("║[3]. Xóa Sản Phẩm                                  ║");
                 System.out.println("║[4]. Hiển thị sản phẩm và tổng tiền                ║");
                 System.out.println("║[0]. Thoát                                         ║");
@@ -44,7 +44,7 @@ public class MenuUser {
                             managerUser.buyProduct();
                             break;
                         case 3:
-                            menuAdmin.menuAdmin();
+                            managerUser.removeProduct();
                             break;
                         case 4:
                             managerUser.showGioHang();

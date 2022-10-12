@@ -12,21 +12,20 @@ import java.util.Scanner;
 
 public class ManagerUser {
     File fileUser = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/user.txt");
-    File fileGiohang = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/giohang.txt");
-    ReadAndWrite<AccountUser>readAndWrite = new ReadAndWrite<>();
-    ReadAndWrite<Cat>readAndWrite2 = new ReadAndWrite<>();
     ArrayList<AccountUser> accountUsers;
-    ArrayList<Cat>giohang =readAndWrite2.read(fileGiohang);
-
-    Scanner sc = new Scanner(System.in);
-
-    MenuUser menuUser;
-    ValidateUser validateUser;
-    ManagerProduct managerProduct;
-
     public ManagerUser() {
         accountUsers = readAndWrite.read(fileUser);
     }
+    File fileGiohang = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/case_study/CaseStudy/src/File_text/giohang.txt");
+    ReadAndWrite<AccountUser>readAndWrite = new ReadAndWrite<>();
+    ReadAndWrite<Cat>readAndWrite2 = new ReadAndWrite<>();
+
+    ArrayList<Cat>giohang = readAndWrite2.read(fileGiohang);
+
+    Scanner sc = new Scanner(System.in);
+    ManagerProduct managerProduct = new ManagerProduct();
+
+
 
     public boolean login() {
         accountUsers = readAndWrite.read(fileUser);
@@ -61,7 +60,7 @@ public class ManagerUser {
             if (checkUserName(username)) {
                 break;
             }
-            System.out.println("Trùng username rồi");
+            System.err.println("Trùng username");
         }
         System.out.println("Nhập password ( không phân biệt hoa-thường hay số): ");
         String password = ValidateUser.password();
@@ -87,6 +86,7 @@ public class ManagerUser {
     }
 
     public void removeAcc() {
+        accountUsers = readAndWrite.read(fileUser);
         String userremove = null;
         System.out.println("Nhập username muốn xóa");
         userremove = sc.nextLine();
@@ -108,6 +108,7 @@ public class ManagerUser {
                 accountUsers.get(i).setRole("1");
             }
         }
+        System.out.println("Ủy quyền thành công");
         readAndWrite.write(fileUser, accountUsers);
     }
 
@@ -120,6 +121,7 @@ public class ManagerUser {
                 accountUsers.get(i).setRole("0");
             }
         }
+        System.out.println("Tước quyền thành công");
         readAndWrite.write(fileUser, accountUsers);
     }
 
@@ -131,17 +133,18 @@ public class ManagerUser {
         }
         return true;
     }
+
     public void buyProduct(){
         System.out.println("Nhập tên sản phẩm muốn thêm vào giỏ hàng");
         String nameCaterory= sc.nextLine();
         for (int i = 0; i < managerProduct.CatList.size(); i++) {
             if(managerProduct.CatList.get(i).getNameCat().equals(nameCaterory)){
                 giohang.add(managerProduct.CatList.get(i));
+                readAndWrite.write(fileUser, accountUsers);
+                readAndWrite2.write(fileGiohang,giohang);
             }
+        } System.err.println("Không tồn tại sản phẩm này trong giỏ hàng");
 
-        }
-        readAndWrite.write(fileUser, accountUsers);
-        readAndWrite2.write(fileGiohang,giohang);
     }
     public void removeProduct(){
         System.out.println("Nhập tên sản phẩm muốn xóa khỏi giỏ hàng");
@@ -149,20 +152,20 @@ public class ManagerUser {
         for (int i = 0; i < giohang.size(); i++) {
             if(giohang.get(i).getNameCat().equals(nameCaterory)){
                 giohang.remove(giohang.get(i));
-
+                readAndWrite.write(fileUser, accountUsers);
+                readAndWrite2.write(fileGiohang,giohang);
             }
+        } System.err.println("Không tồn tại sản phẩm này trong giỏ hàng");
 
-        }
-//        readAndWrite.write(file,accountUsers);
-        readAndWrite2.write(fileGiohang,giohang);
     }
 
-    public void showProduct(){
-        for (int i = 0; i <managerProduct.CatList.size() ; i++) {
-            System.out.println(managerProduct.CatList.get(i).toString());
-        }
-    }
+//    public void showProduct(){
+//        for (int i = 0; i <managerProduct.CatList.size() ; i++) {
+//            System.out.println(managerProduct.CatList.get(i).toString());
+//        }
+//    }
     public void showGioHang(){
+        giohang = readAndWrite2.read(fileGiohang);
         for (int i = 0; i < giohang.size(); i++) {
             System.out.println(giohang.get(i));
         }

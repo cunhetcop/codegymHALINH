@@ -1,4 +1,4 @@
-package Validate;
+package lopthuoctinhdoituong.QuanLySanPham.Validate;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

@@ -30,7 +30,7 @@ public class MenuAdmin {
                 System.out.println("║[3]. Sửa Sản Phẩm                                  ║");
                 System.out.println("║[4]. Tìm kiếm Sản Phẩm                             ║");
                 System.out.println("║[5]. Xóa sản phẩm                                  ║");
-                System.out.println("║[6]. Hiển thị danh sách nhân viên                  ║");
+                System.out.println("║[6]. Hiển thị danh sách tài khoản                  ║");
                 System.out.println("║[7]. Xóa tài khoản nhân viên theo username         ║");
                 System.out.println("║[8]. Ủy quyền thành tài khoản quản trị             ║");
                 System.out.println("║[9]. Tước quyền quản trị                           ║");
