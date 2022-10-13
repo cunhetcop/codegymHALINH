@@ -1,0 +1,5 @@
+3, Quỳnh, 18, Nữ, DL, 5
+4, Thu, 30, nữ, HN, 6
+2, Hoa, 18, nữ, TQ, 8
+1, Hà Linh, 30, nam, HN, 9
+5, Tuấn, 29, nam, HCM, 3

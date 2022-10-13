@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+<!--<script>-->
+<!--  function tinhbinhphuong(so) {-->
+<!--    let binhphuong = so*so-->
+<!--    return binhphuong-->
+<!--  }-->
+<!--  let x =+prompt("Nhập một số: ")-->
+<!--  let so = tinhbinhphuong(x)-->
+<!--  alert("bình phương của "+ x + " là " + so)-->
+<!--</script>-->
+
+
+
+<!--Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+<!--<script>-->
+<!--  function dientich_(x){-->
+<!--    let dientichx = r*r*3.14;-->
+<!--    return dientichx;-->
+<!--  }-->
+<!--  function chuvi_(x){-->
+<!--    let chuvix = r*2*3.14;-->
+<!--    return chuvix;-->
+<!--  }-->
+<!--  let r =+prompt("Nhập vào bán kính: ");-->
+<!--  let dientich = dientich_(r);-->
+<!--  let chuvi = chuvi_(r);-->
+<!--  document.write("bán kính r có diện tích là : "+ dientich+"<br>");-->
+<!--  document.write("bán kính r có chu vi là : "+ chuvi)-->
+<!--</script>-->
+
+
+
+<!--Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+<!--<script>-->
+<!--  function giaithua_(x){-->
+<!--    let giaithuax= 1-->
+<!--    for (let i = 1; i <= a ; i++){-->
+<!--      giaithuax *= i-->
+<!--    }-->
+<!--    return giaithuax-->
+<!--  }-->
+<!--  let a =+prompt("Nhập vào số cần tính gai thừa: ");-->
+<!--  let giaithua = giaithua_(a);-->
+<!--  document.write("giai thừa của " +a+ " là "+ giaithua);-->
+<!--</script>-->
+
+
+
+<!--Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.-->
+<!--Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+<!--<script>-->
+<!--  let so ="0123456789";-->
+<!--  function kiemtra(){-->
+<!--    let check-->
+<!--    let nhap = prompt("nhập:");-->
+<!--    if (so.indexOf(nhap) !== -1){-->
+<!--      check = true ;-->
+<!--      alert(check);-->
+<!--      return check-->
+<!--    }else {-->
+<!--      check = false;-->
+<!--      alert(check);-->
+<!--      return check-->
+<!--    }-->
+<!--  }-->
+<!--  kiemtra()-->
+<!--</script>-->
+
+
+
+<!--Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->
+<!--<script>-->
+<!--  function kiemtramin(a,b,c){-->
+<!--    let min =a-->
+<!--    if (min){-->
+<!--      min = b ;-->
+<!--      if (min >c){-->
+<!--        min = c;-->
+<!--      }-->
+<!--    }-->
+<!--    return min-->
+<!--  }-->
+<!--  let a =+prompt("Nhập vào số: ");-->
+<!--  let b =+prompt("Nhập vào số: ");-->
+<!--  let c =+prompt("Nhập vào số: ");-->
+<!--  let minabc = kiemtramin(a,b,c);-->
+<!--  alert("Số nhỏ nhất là : "+ minabc)-->
+<!--</script>-->
+
+
+
+<!--Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.-->
+<!--Nếu là nguyên dương trả về true, ngược lại trả về false.-->
+<!--<script>-->
+<!--  function kiemtrasoam(a){-->
+<!--    let check;-->
+<!--    if (a>0){-->
+<!--      check = true;-->
+<!--    }else {-->
+<!--      check = false;-->
+<!--    }-->
+<!--    return check-->
+<!--  }-->
+<!--  let a =+prompt("Nhập vào số: ");-->
+<!--  let so = kiemtrasoam(a);-->
+<!--  alert(so);-->
+<!--</script>-->
+
+
+
+<!--Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.-->
+<!--<script>-->
+<!--  function hoandoi(a,b){-->
+<!--    let c;-->
+<!--    let hienra = ""-->
+<!--    c=a;-->
+<!--    a=b;-->
+<!--    b=c;-->
+<!--    return hienra = a + " "+ b ;-->
+<!--  }-->
+<!--  let a =prompt("Nhập vào số: ");-->
+<!--  let b =prompt("Nhập vào số: ");-->
+<!--  let KQ = hoandoi(a,b);-->
+<!--  alert(KQ)-->
+<!--</script>-->
+
+
+
+<!--Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.-->
+<!--<script>-->
+<!--  let arr = []-->
+<!--  function daonguoc(){-->
+<!--    let n =+prompt("số phân ử trong mảng ")-->
+<!--    for (let i = 0; i < n; i++){-->
+<!--      arr[i] = prompt("Nhập mảng :");-->
+<!--    }-->
+<!--  }-->
+<!--  daonguoc()-->
+<!--  console.log(arr)-->
+<!--  arr.reverse()-->
+<!--  console.log(arr)-->
+<!--</script>-->
+
+
+
+<!--Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.-->
+<!--Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
+<!--<script>-->
+<!--  let mang = prompt("nhập mảng :");-->
+<!--  let count =0-->
+<!--  function kiemtraphantu(x){-->
+<!--    for (let i = 0; i < mang.length ; i++){-->
+<!--      if (mang[i].indexOf(a) !== -1){-->
+<!--        count++-->
+<!--      }-->
+<!--    }-->
+<!--    if (count === 0){-->
+<!--      count = -1-->
+<!--    }-->
+<!--    return count-->
+<!--  }-->
+<!--  let a = prompt("nhập ký tự cần tìm");-->
+<!--  let sophantu = kiemtraphantu(a)-->
+<!--  console.log(sophantu)-->
+<!--</script>-->
+
+
+
+
+</body>
+</html>

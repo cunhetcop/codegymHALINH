@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Bài 1:
+<!--<script>-->
+<!--    let diemthi = [1, 7, 6, 2, 5, 8]-->
+<!--    let total = 0-->
+<!--    function findAvg() {-->
+<!--        for (let i = 0; i < diemthi.length; i++) {-->
+<!--            total += diemthi[i]-->
+<!--            avgscore = total/diemthi.length-->
+<!--        }  return avgscore-->
+<!--    }-->
+<!--  document.write("Điểm thi trung bình các môn là:" + findAvg(diemthi))-->
+<!--</script>-->
+
+Bài 2:
+<!--<script>-->
+<!--    function insertNumberToArray(acc, x, index) {-->
+<!--        if (index < 0 || index > arr.length) {-->
+<!--            return arr;-->
+<!--        } else {-->
+<!--            let arrNew = new Array(arr.length + 1);-->
+<!--            arrNew[index] = x-->
+<!--            for (let i = 0; i < arrNew.length; i++) {-->
+<!--                if (i < index) {-->
+<!--                    arrNew[i] = arr[i];-->
+<!--                }-->
+<!--                if (i > index) {-->
+<!--                    arrNew[i] = arr[i - 1];-->
+<!--                }-->
+<!--            }-->
+<!--            return arrNew-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+
+Bài 3:
+<!--<script>-->
+<!--    let x = prompt("nhap vao so x");-->
+<!--    function sumOfListPrime()-->
+<!--    {-->
+<!--        let total = 0;-->
+<!--        for (let i = 2; i < x; i++) {-->
+<!--            let check = true;-->
+<!--            for (j = 2; j < i; j++) {-->
+<!--                if (i % j == 0) {-->
+<!--                    check = false;-->
+<!--                    break;-->
+<!--                    return x-->
+<!--                }-->
+<!--            }-->
+<!--            if (check === true) {-->
+<!--                total += i;-->
+<!--            }-->
+<!--        }-->
+<!--        document.write("Tổng các số nguyên tố từ 0 tới " + x + " là: " + total);-->
+<!--    }-->
+<!--    sumOfListPrime(x);-->
+<!--</script>-->
+
+Bài 3 ( cách làm khác )
+<!--<script>-->
+<!--    function checkSNT(number) {-->
+<!--        for (let i = 2; i < number; i++) {-->
+<!--            if (number % i === 0) {-->
+<!--                return false-->
+<!--            }-->
+<!--        }-->
+<!--        return true;-->
+<!--    }-->
+<!--    function sumOfListPrime(x){-->
+<!--        let sum = 2;-->
+<!--        for (let i = 3; i <= x; i++){-->
+<!--            if (checkSNT(i)){-->
+<!--                sum+=i;-->
+<!--            }-->
+<!--        } return sum-->
+<!--    }-->
+<!--</script>-->
+
+
+Bài 4:
+<script>
+    class Rectangle {
+        x;
+        y;
+        width;
+        height;
+        color;
+
+        constructor(x, y, width, height, c) {
+
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+
+
+            this.color = c;
+
+        }
+
+        render(canvas) {
+            let ctx = canvas.getContext('2d');
+            ctx.fillStyle = this.color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+
+        }
+    }
+
+    let canvas = document.getElementById('canvas');
+    let rect1 = new Rectangle(100, 100, 300, 200, "red");
+    rect1.render(canvas)
+</script>
+</body>
+</html>

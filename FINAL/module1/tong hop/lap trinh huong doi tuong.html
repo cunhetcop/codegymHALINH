@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Nhanvien {
+        name;
+        age;
+        gender;
+        salary;
+
+        constructor(name, age, gender, salary) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.salary = salary;
+        }
+
+        display() {
+            return "Tên nhân viên: " + this.name
+                + "<br>Tuổi nhân viên: " + this.age
+                + "<br>Giới tính nhân viên: " + this.gender
+                + "<br>Lương nhân viên " + this.salary
+        }
+    }
+
+    let profile = new Nhanvien("Nguyễn Văn B", 18, "nam", "do son", "10000");
+    document.write(profile.display())
+</script>
+</body>
+</html>

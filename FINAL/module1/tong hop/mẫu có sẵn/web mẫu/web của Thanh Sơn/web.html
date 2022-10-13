@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="web.css">
+
+</head>
+<body>
+<div class="app">
+    <!--bố cục phần đầu    -->
+    <header class="header">
+        <!--thẻ header là phần đầu của web        -->
+        <nav class="header__nav">
+            <!--  thẻ nav trong thẻ header -->
+            <ul class="header__nav-list">
+                <li class="header__nav-item header__nav-item--phanCach">Ứng dụng của Thanh Sơn</li>
+                <li class="header__nav-item">
+                    kết nối
+                    <a href="" class=" header__nav-icon-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-item-link">Thông báo</a>
+                    <!--thẻ a dẫn tới 1 đường link khác-->
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-item-link">Trợ giúp</a></li>
+                <li class="header__nav-item header__nav-item--strong">đăng ký</li>
+                <!--  tạo class mới thì phải dữ nguyên class cũ coppy caias mới -->
+                <li class="header__nav-item header__nav-item--strong">đăng nhập</li>
+            </ul>
+        </nav>
+        <div class="header-whit-search">
+            <input type="text" class="input" placeholder="Tìm kiếm" id="timkiem">
+            <button id="myBtn" class="press" onclick="clickBtn()">tim kiếm</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="pTimKiem">Some text in the Modal..</p>
+                </div>
+            </div>
+
+            <dialog id="dig1">
+                <p>dialog 1</p>
+            </dialog>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="grid__row">
+            <div class="grid__column-2">
+                <nav class="category">
+                    <h3 class="danhmuc_danhmuc">Danh mục</h3>
+                    <ul class="danhmuc-link">
+                        <li class="danhmuc-item danhmuc-item__active">
+                            <a href="" class="danhmuc-item__link">Kim long</a>
+                        </li>
+                        <li class="danhmuc-item">
+                            <a href="" class="danhmuc-item__link">Thần tài</a>
+                        </li>
+                        <li class="danhmuc-item">
+                            <a href="" class="danhmuc-item__link">Không tặc</a>
+                        </li>
+                        <li class="danhmuc-item">
+                            <a href="" class="danhmuc-item__link">Luyện rồng</a>
+                        </li>
+                        <li class="danhmuc-item">
+                            <a href="" class="danhmuc-item__link"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="grid__column-10">
+                <div class="homefinter">
+                    <span class="homefinter-lable">Xếp hạng</span>
+                    <button class="homefinter_btn">Thách đấu</button>
+                    <button class="homefinter_btn">Cao thủ</button>
+                    <button class="homefinter_btn">Kim cương</button>
+                    <button class="homefinter_btn">Bạch kim</button>
+                    <button class="homefinter_btn">Vàng</button>
+                    <button class="homefinter_btn">Bạc</button>
+                    <button class="homefinter_btn">Đồng</button>
+                    <button class="homefinter_btn">Săt</button>
+                    <br>
+                </div>
+                <div class="home-produc">
+                    <!--gird => row=> column -->
+                    <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <a href="https://vnexpress.net/ac-mong-10-nam-dang-dang-cua-fan-manchester-united-4496577.html">
+                                <div class="home_produc-item">
+                                    <div class="card" id="show" style="width: 18rem;">
+                                        <img class="card-img-top"
+                                             src=" https://memehay.com/meme/20210930/ga-fan-mu-gay-o-o-o-o.jpg"
+                                             alt="Card image cap">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Thách đấu</h5>
+                                <p class="card-text">800$</p>
+                                <button onclick="themGioHang(0)">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="https://www.facebook.com/badb0y1995/">
+                            <div class="home_produc-item">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top"
+                                         src="https://i.pinimg.com/236x/a1/a3/a4/a1a3a4ffc80db3f289a8cb10cbc47534.jpg "
+                                         alt="Card image cap">
+
+                                </div>
+                            </div>
+                        </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Cao thủ</h5>
+                                <p class="card-text">700$</p>
+                                <button onclick="themGioHang(1)">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="https://www.facebook.com/badb0y1995/">
+                                <div class="home_produc-item">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top"
+                                             src="https://i.pinimg.com/474x/3e/0b/0e/3e0b0e138d78f1dce413f469e94d1be3.jpg"
+                                             alt="Card image cap">
+
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Kim cương</h5>
+                                <p class="card-text">600$</p>
+                                <button onclick="themGioHang(2)">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="https://www.facebook.com/badb0y1995/">
+                            <div class="home_produc-item">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top"
+                                         src="https://bloganchoi.com/wp-content/uploads/2019/09/cat-iv.jpg"
+                                         alt="Card image cap">
+
+                                </div>
+                            </div>
+                        </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Bạch kim</h5>
+                                <p class="card-text">500$</p>
+                                <button onclick="themGioHang(3)">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <div class="home_produc-item">
+                            <a href="https://www.facebook.com/badb0y1995/">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top"
+                                     src="https://sentayho.com.vn/wp-content/uploads/2020/10/meo-vang-vao-nha.jpg"
+                                     alt="Card image cap">
+
+                            </div>
+                        </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Vàng</h5>
+                                <p class="card-text">400$</p>
+                                <button onclick="themGioHang(4)">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                    <div class="grid__column-2-4">
+                        <a href="https://www.facebook.com/badb0y1995/">
+                        <div class="home_produc-item">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top"
+                                     src="https://dogily.vn/wp-content/uploads/2021/09/tai-cup-shaded.jpg"
+                                     alt="Card image cap">
+
+                            </div>
+                        </div>
+                    </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Bạc</h5>
+                            <p class="card-text">300$</p>
+                            <button onclick="themGioHang(5)">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <a href="https://www.facebook.com/badb0y1995/">
+                        <div class="home_produc-item">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top"
+                                     src="https://kenh14cdn.com/k:dpA6uSv3GtBzvbRT7Y4EBtfN37yCA/Image/2013/11/meotuyet2-27224/chum-anh-20-chu-meo-de-thuong-nhat-khi-mua-dong-den.jpg"
+                                     alt="Card image cap">
+
+                            </div>
+                        </div>
+                    </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Đồng</h5>
+                            <p class="card-text">200$</p>
+                            <button onclick="themGioHang(6)">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <a href="https://www.facebook.com/badb0y1995/">
+                        <div class="home_produc-item">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top"
+                                     src="https://cdn.pixabay.com/photo/2015/05/07/19/19/kitten-756956_960_720.jpg"
+                                     alt="Card image cap">
+
+                            </div>
+                        </div>
+                    </a>
+                        <div class="card-body">
+                            <h5 class="card-title">sắt</h5>
+                            <p class="card-text">100$</p>
+                            <button onclick="themGioHang(7)">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <h1>Danh sách sản phẩm</h1>
+                    <form action=""></form>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>giá</th>
+                            <th>số lượng</th>
+                            <th>chọn</th>
+                        </tr>
+                        </thead>
+                        <tbody id="gioHang">
+<!--                        <tr>-->
+<!--                            <td><img class="class-img" sizes="100px" src="https://memehay.com/meme/20210930/ga-fan-mu-gay-o-o-o-o.jpg" alt="">Thách đấu</td>-->
+<!--                            <td><p class="card-text">800$</p></td>-->
+<!--                            <td> <input style="width: 100px;outline: none" type="number" value="1"min="0"></td>-->
+<!--                            <td style="cursor: pointer">Xóa</td>-->
+
+<!--                        <tr>-->
+<!--                            <td><img class="class-img" sizes="100px" src="https://memehay.com/meme/20210930/ga-fan-mu-gay-o-o-o-o.jpg" alt="">Thách đấu</td>-->
+<!--                            <td><p class="card-text">800$</p></td>-->
+<!--                            <td> <input style="width: 100px;outline: none" type="number" value="1"min="0"></td>-->
+<!--                            <td style="cursor: pointer">Xóa</td>-->
+<!--                        </tr>-->
+                        </tbody>
+                    </table>
+                    <div class="price-total">
+                        <p >Tổng Tiền: <spa>0$</spa></p>
+                    </div>
+                    <button>chốt đơn</button>
+                    </form>
+                    </section>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-2-5-1">
+                    <h3 class="footer__heading"> Chăm sóc khách hàng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Trung tâm trợ giúp</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Email</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Hướng dẫn sử dụng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-5-1">
+                    <h3 class="footer__heading"> giới thiệu</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Giới thiệu ứng dụng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Tuyển dụng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Điều khoản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-5-1">
+                    <h3 class="footer__heading"> Chăm sóc khách hàng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Trợ giúp</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Trợ giúp</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Trợ giúp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-5-1">
+                    <h3 class="footer__heading"> Theo dõi</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">instagam</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">facebook</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">zalo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-5-1">
+                    <h3 class="footer__heading">Sản phẩm trên ứng dụng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">garena</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">TFT</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item-link">Rank</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid__row">
+                <p class="text">2022- bản quyền thuộc về Thanh Sơn</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="web.js"></script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Điểm môn A: <input id="diemmonA" type="text">
+<br>
+<br>
+Điểm môn B: <input id="diemmonB" type="text">
+<br>
+<br>
+Điểm môn C: <input id="diemmonC" type="text">
+<br>
+<br>
+<button onclick="show()">check</button>
+<br> <br>
+<div id="result1"></div>
+
+<script>
+    function show() {
+        let a = parseFloat(document.getElementById("diemmonA").value)
+        let b = parseFloat(document.getElementById("diemmonB").value)
+        let c = parseFloat(document.getElementById("diemmonC").value)
+        let diemtb = (a + b + c) / 3
+        let result = ""
+        if (diemtb < 3) {
+            result = "Học lực Yếu" + "<img src = 'https://i.pinimg.com/originals/3b/97/63/3b97635b6bd4a5bfc436fbd3908f05e0.gif' alt='anh' width='100' height='100'>";
+        } else if (diemtb < 4.5) {
+            result = "Học lực Trung Bình"
+        } else if (diemtb < 6.5) {
+            result = "Học lực Khá"
+        } else {
+            result = "Học lực Giỏi"
+        }
+        document.getElementById("result1").innerHTML = "Điểm trung bình của bạn là: " + diemtb + "<br>" + "Bạn đạt " + result
+    }
+</script>
+
+</body>
+</html>

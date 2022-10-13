@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function answerquestion(answer){
+    let result = ""
+    if (answer) {
+      result = "đi hotel";
+    } else {
+      result = "thế thì đi về :))";
+    } return result
+  }
+
+  let a = confirm("Đi chơi không?")
+  let b = answerquestion(a)
+  alert(b)
+</script>
+</body>
+</html>

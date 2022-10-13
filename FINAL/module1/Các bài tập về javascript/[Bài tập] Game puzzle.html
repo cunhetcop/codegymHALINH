@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<img id="img" onclick="changeImg()" src="https://scontent.fhan2-1.fna.fbcdn.net/v/t39.30808-6/278185209_5423010074417540_8282088755660481727_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=CS_t2ara58kAX-_C57D&_nc_ht=scontent.fhan2-1.fna&oh=00_AT_z2h8lcZ39nC1QPzFBOOfr_XY7uoAKLBuRqtUwzk2h7Q&oe=62FCF8C3" width="400px" height="400px">
+</body>
+</html>
+
+<script>
+  let count = 1;
+
+  function changeImg() {
+    if (count === 1) {
+      document.getElementById("img").src = "https://scontent.fhan2-4.fna.fbcdn.net/v/t1.6435-9/79334847_2921135307938375_7015301278074929152_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AZRtyDMZKLIAX_RZiEg&_nc_ht=scontent.fhan2-4.fna&oh=00_AT-hB8pAvRbpWlRssdQYmMX7_z0yvmkXc-jZprrTBocavw&oe=631FA12A";
+      count++;
+    } else {
+      count = 1;
+      document.getElementById("img").src = "https://scontent.fhan2-1.fna.fbcdn.net/v/t39.30808-6/278185209_5423010074417540_8282088755660481727_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=CS_t2ara58kAX-_C57D&_nc_ht=scontent.fhan2-1.fna&oh=00_AT_z2h8lcZ39nC1QPzFBOOfr_XY7uoAKLBuRqtUwzk2h7Q&oe=62FCF8C3";
+    }
+  }
+
+</script>
