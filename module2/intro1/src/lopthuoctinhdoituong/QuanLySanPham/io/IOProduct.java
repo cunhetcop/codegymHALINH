@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class IOProduct {
-    static File file = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/intro1/src/lopthuoctinhdoituong/QuanLySanPham/file_text/Product.txt");
+    static File file = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/intro1/src/lopthuoctinhdoituong/QuanLySanPham/file_text/sinhViens.txt");
 
     public static void write(ArrayList<Product> products) {
         try {

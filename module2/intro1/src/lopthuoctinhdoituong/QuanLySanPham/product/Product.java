@@ -18,6 +18,9 @@ public class Product {
         this.describe = describe;
     }
 
+    public Product(int id, String name, int age, String gender, String address) {
+    }
+
     public int getIDproduct() {
         return IDproduct;
     }

@@ -1,13 +1,8 @@
-package lopthuoctinhdoituong.QuanLySanPham;
+package lopthuoctinhdoituong.QuanLySinhVien;
 
-
-
-import lopthuoctinhdoituong.QuanLySanPham.manager.Manager;
-
-import java.util.Scanner;
+import lopthuoctinhdoituong.QuanLySinhVien.manager.Manager;
 
 public class Main {
-
     public static void main(String[] args) {
         Manager manager = new Manager();
         String menu= """
@@ -31,7 +26,6 @@ public class Main {
 **    ** **     **  *******  **  **     **  **    **
                 """;
         System.out.println(menu);
-manager.menu();
-
+        manager.menu();
     }
 }
