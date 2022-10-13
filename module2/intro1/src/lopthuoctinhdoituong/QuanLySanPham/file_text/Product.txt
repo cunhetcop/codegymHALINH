@@ -1,5 +1,6 @@
-1, Chim, 50.0, 1, Chim Sẻ
-2, Mèo, 100.0, 1, Mèo Mun
-3, Chó, 30.0, 1, Chó Ngao
-4, Chuột, 60.0, 1, Chuột Trù
-5, Khỉ, 40.0, 1, Khỉ đầu chó
+ID=1, Tên Mèo= 'Chim', Giá= 50.0, Số lượng= 1, Mô tả= 'Chim Sẻ'
+ID=2, Tên Mèo= 'Mèo', Giá= 100.0, Số lượng= 1, Mô tả= 'Mèo Mun'
+ID=3, Tên Mèo= 'Chó', Giá= 30.0, Số lượng= 1, Mô tả= 'Chó Ngao'
+ID=4, Tên Mèo= 'Chuột', Giá= 60.0, Số lượng= 1, Mô tả= 'Chuột Trù'
+ID=5, Tên Mèo= 'Khỉ', Giá= 40.0, Số lượng= 1, Mô tả= 'Khỉ đầu chó'
+ID=6, Tên Mèo= 'Gà', Giá= 20.0, Số lượng= 1, Mô tả= 'Gà gô'
