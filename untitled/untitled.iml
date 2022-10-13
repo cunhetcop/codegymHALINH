@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/..">
+      <sourceFolder url="file://$MODULE_DIR$/../casethamkhao/CaseModule2_1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../casethamkhao/CaseModule2_1/src/Validate" isTestSource="false" packagePrefix="io" />
+      <sourceFolder url="file://$MODULE_DIR$/../casethamkhao/CaseModule2_2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../casethamkhao/CaseModule2_3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../casethamkhao/CaseModule2_3/src/controller" isTestSource="false" packagePrefix="File_text" />
+      <sourceFolder url="file://$MODULE_DIR$/../casethamkhao/CaseModule2_4/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2 final test/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/case_study/CaseStudy/democase/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/case_study/CaseStudy/democase2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/case_study/CaseStudy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/Abstract Interface/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/Access modifier, static method, static property/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/Kế thừa/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/Sử dụng toán tử/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/chuyển dổi tiền tệ/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/hiển thị lời chào/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/kiểm tra năm nhuận/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/phương trình bậc nhất/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/system-time/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/tính chỉ số BMI/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/tính số ngày trong tháng/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/variable type/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/introduction to java/đọc số thành chữ/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/Xóa phần tử trong mảng/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/chuong trinh chuyển đổi nhiệt độ/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/gộp 2 mảng/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/phương thức tìm giá trị nhỏ nhất trong mảng/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/thêm phần tử trong mảng/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/tìm giá trị lớn nhất trong mảng/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/tìm giá trị nhỏ nhất trong mảng/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/tìm giá trị trong mảng/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/tìm phần tử lớn nhất trong mảng 2 chiều/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/Đếm số lượng sinh viên thi đỗ/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/mảng và phương thức/đảo ngược các phần tử trong mảng/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/vòng lặp java/hiển thị các hình bằng dấu */src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/vòng lặp java/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/vòng lặp java/thiết kế menu cho ứng dụng có lựa chọn/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/vòng lặp java/tìm 20 số nguyên tố đầu tiên/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/vòng lặp java/tìm các số nguyên tố &lt;100/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/vòng lặp java/tìm số nguyên tố/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/vòng lặp java/tìm ước chung lớn nhất/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../module2/intro1/vòng lặp java/tính tiền cho vay/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../phudaotang5" isTestSource="false" packagePrefix="GIT" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
