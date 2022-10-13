@@ -1,13 +1,13 @@
 package QuanLySinhVien.io;
 
-import GIT.QuanLySanPham.product.Product;
-import GIT.QuanLySinhVien.product.SinhVien;
+
+import QuanLySinhVien.product.SinhVien;
 
 import java.io.*;
 import java.util.ArrayList;
 
 public class IOsinhvien {
-    static File file = new File("/Users/nguyenhalinh/Applications/codegymHALINH/module2/intro1/src/lopthuoctinhdoituong/QuanLySinhVien/file_text/sinhViens.txt");
+    static File file = new File("/Users/nguyenhalinh/Applications/codegymHALINH/FINAL/src/QuanLySinhVien/file_text/sinhViens.txt");
 
     public static void write(ArrayList<SinhVien> sinhViens) {
         try {

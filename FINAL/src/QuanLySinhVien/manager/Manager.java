@@ -1,9 +1,8 @@
 package QuanLySinhVien.manager;
 
-import GIT.QuanLySanPham.io.IOProduct;
-import GIT.QuanLySanPham.product.Product;
-import GIT.QuanLySinhVien.io.IOsinhvien;
-import GIT.QuanLySinhVien.product.SinhVien;
+
+import QuanLySinhVien.io.IOsinhvien;
+import QuanLySinhVien.product.SinhVien;
 
 import java.util.ArrayList;
 import java.util.Collections;

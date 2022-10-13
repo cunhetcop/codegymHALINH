@@ -1,6 +1,7 @@
 package QuanLySinhVien;
 
-import GIT.QuanLySinhVien.manager.Manager;
+
+import QuanLySinhVien.manager.Manager;
 
 public class Main {
     public static void main(String[] args) {
