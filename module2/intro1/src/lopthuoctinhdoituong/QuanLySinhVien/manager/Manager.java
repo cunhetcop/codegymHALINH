@@ -140,9 +140,11 @@ public class Manager {
         return -1;
     }
 
-    public void show() {
-        for (SinhVien sinhVien : sinhViens) {
-            System.out.println(sinhVien.toString());
+
+    public void show(){
+        for (int i = 0; i < sinhViens.size(); i++) {
+            System.out.println(i+1+"."+sinhViens.get(i).toString());
+
         }
     }
 
