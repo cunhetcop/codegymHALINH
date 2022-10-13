@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="44738c02-462f-498a-963b-c051ecd2631c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2 final test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/module2 final test/QuanLySinhVien/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/module2 final test/QuanLySinhVien/Validate/ValidateUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/module2 final test/QuanLySinhVien/file_text/sinhViens.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/module2 final test/QuanLySinhVien/io/IOsinhvien.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/module2 final test/QuanLySinhVien/manager/Manager$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/module2 final test/QuanLySinhVien/manager/Manager$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/module2 final test/QuanLySinhVien/manager/Manager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/module2 final test/QuanLySinhVien/product/SinhVien.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuanLySinhVien/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuanLySinhVien/Validate/ValidateUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuanLySinhVien/file_text/sinhViens.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuanLySinhVien/io/IOsinhvien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuanLySinhVien/manager/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuanLySinhVien/product/SinhVien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="44738c02-462f-498a-963b-c051ecd2631c" name="Changes" comment="module2 final test">
       <change beforePath="$PROJECT_DIR$/../phudaotang5" beforeDir="false" afterPath="$PROJECT_DIR$/../phudaotang5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +14,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2G46UiTDWlmp5lJS5qhtKNtpzMI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,6 +42,11 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="QuanLySinhVien.Main" />
@@ -84,8 +75,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665635529637</updated>
-      <workItem from="1665635531447" duration="306000" />
+      <workItem from="1665635531447" duration="364000" />
     </task>
+    <task id="LOCAL-00001" summary="module2 final test">
+      <created>1665635877506</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665635877507</updated>
+    </task>
+    <task id="LOCAL-00002" summary="module2 final test">
+      <created>1665635886026</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665635886026</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="module2 final test" />
+    <option name="LAST_COMMIT_MESSAGE" value="module2 final test" />
   </component>
 </project>
