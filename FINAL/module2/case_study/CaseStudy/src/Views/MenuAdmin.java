@@ -9,7 +9,13 @@ import models.Cat;
 import java.util.Scanner;
 
 public class MenuAdmin {
-
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
     Scanner sc = new Scanner(System.in);
     ManagerProduct managerProduct = new ManagerProduct();
 
@@ -19,96 +25,12 @@ public class MenuAdmin {
 
     ManagerAdmin managerAdmin = new ManagerAdmin();
 
-//    public void menuAdmin() {
-//        if (managerAdmin.loginAdmin()) {
-//            while (true) {
-//                String menu= """
-//                        *******  ******** *********  ********   ********   ********   ****
-//                        *******  ******** *********  ********   ********   ********  *****
-//                        **       **    **      ***   **    **   **    **   **       **  **
-//                        **       **    **     ***         ***        ***   **   ***     **
-//                        **       **    **    ***        ***        ***     **   ***     **
-//                        **       **    **   ***        ***        ***      **    **     **
-//                        *******  ********  ***       ********   ********   ********   ******
-//                        *******  ********  ***       ********   ********   ********   ******
-//
-//
-//                        **    **    **      **       **  **     **  **    **
-//                        **    **    **      **       **  ***    **  **    **
-//                        **    **   ****     **       **  ****   **  **    **
-//                        ********   *  *     **       **  *****  **  ********
-//                        ********  ******    **       **  **  *****  ********
-//                        **    **  **   **   **       **  **   ****  **    **
-//                        **    **  *     *   *******  **  **    ***  **    **
-//                        **    ** **     **  *******  **  **     **  **    **
-//                        """;
-//                System.out.println(menu);
-//                System.out.println("╔===================================================╗");
-//                System.out.println("║        ▂ ▃ ▅ ▆ █ GIAO DIỆN QUẢN LÝ █ ▆ ▅ ▃ ▂      ║");
-//                System.out.println("╠===================================================╣");
-//                System.out.println("║[1]. Hiển thị danh sách sản phẩm                   ║");
-//                System.out.println("║[2]. Thêm Sản Phẩm                                 ║");
-//                System.out.println("║[3]. Sửa Sản Phẩm                                  ║");
-//                System.out.println("║[4]. Tìm kiếm Sản Phẩm                             ║");
-//                System.out.println("║[5]. Xóa sản phẩm                                  ║");
-//                System.out.println("║[6]. Hiển thị danh sách tài khoản                  ║");
-//                System.out.println("║[7]. Xóa tài khoản nhân viên theo username         ║");
-//                System.out.println("║[8]. Ủy quyền thành tài khoản quản trị             ║");
-//                System.out.println("║[9]. Tước quyền quản trị                           ║");
-//                System.out.println("║[0]. Thoát                                         ║");
-//                System.out.println("╚===================================================╝");
-//                System.out.println("Nhập lựa chọn:");
-//                try {
-//                    int choice1 = Integer.parseInt(sc.nextLine());
-//                    if (choice1 < 0 || choice1 > 9) {
-//                        System.out.println();
-//                        System.err.println("Lựa chọn không tồn tại");
-//                    }
-//
-//                    switch (choice1) {
-//                        case 1:
-//                            managerProduct.showCat();
-//                            break;
-//                        case 2:
-//                            Cat cat = managerProduct.create();
-//                            managerProduct.add(cat);
-//                            break;
-//                        case 3:
-//                            managerProduct.edit();
-//                            break;
-//                        case 4:
-//                            managerProduct.findIndexById(1);
-//                            break;
-//                        case 5:
-//                            managerProduct.deleteProduct();
-//                            break;
-//                        case 6:
-//                            managerUser.showACC();
-//                            break;
-//                        case 7:
-//                            managerUser.removeAcc();
-//                            break;
-//                        case 8:
-//                            managerUser.uyquyenAdmin();
-//                            break;
-//                        case 9:
-//                            managerUser.tuocquyenAdmin();
-//                            break;
-//                        case 0:
-//                            return;
-//                    }
-//                } catch (Exception e) {
-//                    System.err.println("Mời nhập lại");
-//                }
-//            }
-//
-//        } else {
-//            System.err.println("Sai tài khoản hoặc mật khẩu, đăng nhập lại");
-//        }
-//    }
 
     public void menuAdmin() {
         if (managerAdmin.loginAdmin()) {
+            System.out.println(ANSI_GREEN);
+            System.out.println("Đăng nhập admin thành công!");
+            System.out.println(ANSI_RESET);
             while (true) {
                 System.out.println("╔===================================================╗");
                 System.out.println("║       ▂ ▃ ▅ ▆ █ GIAO DIỆN QUẢN LÝ █ ▆ ▅ ▃ ▂       ║");
@@ -176,7 +98,6 @@ public class MenuAdmin {
                         managerProduct.priceMaxToMin();
                         break;
                     case 4:
-                        //tìm kiếm sp theo tên
                         managerProduct.timSP();
                         break;
                     case 5:
@@ -204,7 +125,7 @@ public class MenuAdmin {
             System.out.println("╠===================================================╣");
             System.out.println("║[1]. Hiển thị danh sách tài khoản                  ║");
             System.out.println("║[2]. Xóa tài khoản thành viên theo username        ║");
-            System.out.println("║[3]. Ủy quyền thành tài khoản quản trị             ║");
+            System.out.println("║[3]. Ủy quyền quản trị                             ║");
             System.out.println("║[4]. Tước quyền quản trị                           ║");
             System.out.println("║[0]. Thoát                                         ║");
             System.out.println("╚===================================================╝");

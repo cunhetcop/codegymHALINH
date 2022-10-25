@@ -11,6 +11,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ManagerUser {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
     File fileUser = new File("/Users/nguyenhalinh/Applications/codegymHALINH/FINAL/module2/case_study/CaseStudy/src/File_text/user.txt");
     ArrayList<AccountUser> accountUsers;
 
@@ -70,6 +77,9 @@ public class ManagerUser {
         String password = ValidateUser.password();
         System.out.println("Nhấn số '0' để hoàn tất đăng ký");
         String role = ValidateUser.role();
+        System.out.println(ANSI_GREEN);
+        System.out.println("Chúc mừng bạn đã đăng ký thành công");
+        System.out.println(ANSI_RESET);
 
         accountUsers.add(new AccountUser(name, age, telephone, email, username, password, role, giohang));
         readAndWrite.write(fileUser, accountUsers);
@@ -96,7 +106,9 @@ public class ManagerUser {
         for (int i = 0; i < accountUsers.size(); i++) {
             if (accountUsers.get(i).getUsername().equals(userremove)) {
                 accountUsers.remove(i);
+                System.out.println(ANSI_GREEN);
                 System.out.println("Xóa tài khoản thành công");
+                System.out.println(ANSI_RESET);
                 readAndWrite.write(fileUser, accountUsers);
                 return;
             }
@@ -112,7 +124,9 @@ public class ManagerUser {
         for (int i = 0; i < accountUsers.size(); i++) {
             if (accountUsers.get(i).getUsername().equals(usernameuyquyen)) {
                 accountUsers.get(i).setRole("1");
+                System.out.println(ANSI_GREEN);
                 System.out.println("Ủy quyền thành công");
+                System.out.println(ANSI_RESET);
                 readAndWrite.write(fileUser, accountUsers);
                 return;
             }
@@ -128,7 +142,9 @@ public class ManagerUser {
         for (int i = 0; i < accountUsers.size(); i++) {
             if ((accountUsers.get(i).getUsername().equals(usernameuyquyen))) {
                 accountUsers.get(i).setRole("0");
+                System.out.println(ANSI_GREEN);
                 System.out.println("Tước quyền thành công");
+                System.out.println(ANSI_RESET);
                 readAndWrite.write(fileUser, accountUsers);
                 return;
             }
@@ -152,7 +168,9 @@ public class ManagerUser {
         for (int i = 0; i < managerProduct.CatList.size(); i++) {
             if (managerProduct.CatList.get(i).getNameCat().equals(nameCaterory)) {
                 giohang.add(managerProduct.CatList.get(i));
+                System.out.println(ANSI_GREEN);
                 System.out.println("Thêm vào giỏ hàng thành công");
+                System.out.println(ANSI_RESET);
                 readAndWrite.write(fileUser, accountUsers);
                 readAndWrite2.write(fileGiohang, giohang);
                 return;
@@ -168,7 +186,9 @@ public class ManagerUser {
         for (int i = 0; i < giohang.size(); i++) {
             if (giohang.get(i).getNameCat().equals(nameCaterory)) {
                 giohang.remove(giohang.get(i));
+                System.out.println(ANSI_GREEN);
                 System.out.println("Xóa thành công");
+                System.out.println(ANSI_RESET);
                 readAndWrite.write(fileUser, accountUsers);
                 readAndWrite2.write(fileGiohang, giohang);
                 return;

@@ -7,6 +7,13 @@ import managers.ManagerUser;
 import java.util.Scanner;
 
 public class MenuUser {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
     Scanner sc = new Scanner(System.in);
     ManagerUser managerUser = new ManagerUser();
 
@@ -16,7 +23,9 @@ public class MenuUser {
 
     public void menuUser() {
         if (managerUser.login()) {
-            System.out.println("Đăng nhập thành công");
+            System.out.println(ANSI_GREEN);
+            System.out.println("Đăng nhập user thành công");
+            System.out.println(ANSI_RESET);
             while (true) {
                 System.out.println("╔===================================================╗");
                 System.out.println("║       ▂ ▃ ▅ ▆ █ GIAO DIỆN NGƯỜI DÙNG █ ▆ ▅ ▃ ▂    ║");

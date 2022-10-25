@@ -8,6 +8,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ManagerAdmin {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
     File file = new File("/Users/nguyenhalinh/Applications/codegymHALINH/FINAL/module2/case_study/CaseStudy/src/File_text/account.txt");
     ReadAndWrite<AccountAdmin> readAndWrite = new ReadAndWrite<>();
     ArrayList<AccountAdmin> accountAdmin = readAndWrite.read(file);

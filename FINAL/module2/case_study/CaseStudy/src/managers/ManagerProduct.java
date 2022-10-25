@@ -11,14 +11,27 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class ManagerProduct {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
     File fileProduct = new File("/Users/nguyenhalinh/Applications/codegymHALINH/FINAL/module2/case_study/CaseStudy/src/File_text/product.txt");
     ReadAndWrite<Cat>readAndWrite  = new ReadAndWrite<>();
     ArrayList<Cat> CatList = readAndWrite.read(fileProduct);
     Scanner sc = new Scanner(System.in);
 
+//    public void showCat(){
+//        for (Cat cat : CatList) {
+//            System.out.println(cat.toString());
+//        }
+//    }
+
     public void showCat(){
-        for (Cat cat : CatList) {
-            System.out.println(cat.toString());
+        for (int i = 0; i < CatList.size(); i++) {
+            System.out.println(i+1+"."+CatList.get(i).toString());
         }
     }
 
@@ -108,7 +121,9 @@ public class ManagerProduct {
         for (int i = 0; i < CatList.size(); i++) {
                 if (CatList.get(i).getIdCat() == IDproduct) {
                     CatList.set(i, create());
+                    System.out.println(ANSI_GREEN);
                     System.out.println("Cập nhật thành công");
+                    System.out.println(ANSI_RESET);
                     readAndWrite.write(fileProduct, CatList);
                     return;
                 }
@@ -131,7 +146,9 @@ public class ManagerProduct {
         for (int i = 0; i < CatList.size() ; i++) {
             if (CatList.get(i).getIdCat() == IDproduct){
                 CatList.remove(i);
+                System.out.println(ANSI_GREEN);
                 System.out.println("Xóa thành công");
+                System.out.println(ANSI_RESET);
                 readAndWrite.write(fileProduct, CatList);
                 return;
             }
