@@ -1,3 +1,3 @@
-# case-study-md3
+# case-study-md3-halinh-c0722g1
 
-Website shop bán quần áo
+Website quản lý sản phẩm
