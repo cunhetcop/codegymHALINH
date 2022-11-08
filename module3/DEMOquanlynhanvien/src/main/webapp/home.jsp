@@ -19,25 +19,29 @@
 <body>
 
 <div class="container mt-3">
-    <h2>Dark Striped Table</h2>
-    <p>Combine .table-dark and .table-striped to create a dark, striped table:</p>
+    <h2>Bảng quản lý nhân viên</h2>
     <table class="table table-dark table-striped">
         <thead>
         <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
+            <th>id</th>
+            <th>Tên</th>
+            <th>Ảnh</th>
+            <th>Trạng Thái</th>
         </tr>
         </thead>
         <tbody>
         <c:forEach items="${nhanviens}" var="nv">
-        <tr>
-            <td>${nv.id}</td>
-            <td>${nv.name}</td>
-            <td><img src="${nv.img}" width="250" height="200"></td>
-            <c:if test="${nv.status==true}"><td style="color: aqua">Còn làm</td></c:if>
-            <c:if test="${nv.status==true}"><td style="color: red">Nghỉ làm</td></c:if>
-        </tr>
+            <tr>
+                <td>${nv.id}</td>
+                <td>${nv.name}</td>
+                <td><img src="${nv.img}" width="270" height="200"></td>
+                <c:if test="${nv.status==true}">
+                    <td style="color: green">Còn làm</td>
+                </c:if>
+                <c:if test="${nv.status==false}">
+                    <td style="color: red">Nghỉ làm</td>
+                </c:if>
+            </tr>
         </c:forEach>
         </tbody>
     </table>
