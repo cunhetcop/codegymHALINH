@@ -3,6 +3,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <style>
+        body {
+            background-image: url("https://codegym.vn/wp-content/uploads/2020/05/hue-2-1-1.jpg");
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Student Management Application</title>
 </head>
 <body>
@@ -11,9 +18,6 @@
     <c:if test="${message} !=null">
         <span class="message">${message}</span>
     </c:if>
-</p>
-<p>
-    <a href="/students">Back to student list</a>
 </p>
 <form method="post">
     <fieldset>
@@ -49,7 +53,8 @@
 
             <tr>
                 <td></td>
-                <td><input type="submit" value="Update information"></td>
+                <td><input type="submit" class="btn btn-primary" value="Update information"></td>
+                <td><button type="button" class="btn btn-warning"><a href="/students" id="a-cancel">Cancel</a></button></td>
             </tr>
 
         </table>

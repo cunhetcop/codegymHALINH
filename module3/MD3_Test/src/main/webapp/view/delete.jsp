@@ -9,7 +9,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <style>
+        body {
+            background-image: url("https://codegym.vn/wp-content/uploads/2020/05/hue-2-1-1.jpg");
+        }
+    </style>
     <title>Student Management Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <center>
@@ -19,7 +26,7 @@
     <form method="post">
         <h3>Are you sure?</h3>
         <table>
-            <caption>Student Information</caption>
+          Student Information
             <tr>
                 <th>ID: </th>
                 <td>${student.getId()}</td>
@@ -49,8 +56,8 @@
                 <td>${student.classStudent.name}</td>
             </tr>
             <tr>
-                <td><button type="submit" class="btn btn-danger">Delete</button></td>
-                <td><button type="button" class="btn btn-secondary"><a href="/student" id="a-cancel">Cancel</a></button> </td>
+                <td><button class="btn btn-danger" type="submit" class="btn btn-danger">Delete</button></td>
+                <td><button type="button" class="btn btn-warning"><a href="/students" id="a-cancel">Cancel</a></button></td>
             </tr>
         </table>
     </form>

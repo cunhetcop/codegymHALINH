@@ -14,13 +14,13 @@ public class Student {
     public Student() {
     }
 
-    public Student(int id, String name, LocalDate dateOfBirth, String address, String email, String phoneNumber, ClassStudent classStudent) {
+    public Student(int id, String name, LocalDate dateOfBirth, String address,  String phoneNumber, String email, ClassStudent classStudent) {
         this.id = id;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.address = address;
-        this.email = email;
         this.phoneNumber = phoneNumber;
+        this.email = email;
         this.classStudent = classStudent;
     }
 

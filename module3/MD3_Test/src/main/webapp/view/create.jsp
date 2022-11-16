@@ -9,23 +9,31 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
+    <style>
+        body {
+            background-image: url("https://codegym.vn/wp-content/uploads/2020/05/hue-2-1-1.jpg");
+        }
+    </style>
     <title>Student Management Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <center>
     <h1>Student Management</h1>
     <h2>
-        <a href="students?action=students">List All Students</a>
+        <a type="button" class="btn btn-secondary" href="students?action=students">List All Students</a>
     </h2>
 </center>
 <div align="center">
+
     <form method="post">
-        <table border="1" cellpadding="5">
+        <table class="table-primary">
             <caption>
                 <tr>
                     <th>StudentName:</th>
                     <td>
-                        <input type="text" name="name" id="name" size="45" placeholder="Enter name"/>
+                        <input type="text" name="name" pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Tên không được chứa số" id="name" size="45" placeholder="Enter name"/>
                     </td>
                 </tr>
                 <tr>
@@ -49,7 +57,7 @@
                 <tr>
                     <th>Email Address:</th>
                     <td>
-                        <input type="email" name="email" id="email" size="45" placeholder="Enter email"/>
+                        <input type="email" name="email" pattern="[^ @]*@[^ @]*" title="email sai định dạng" id="email" size="45" placeholder="Enter email"/>
                     </td>
                 </tr>
                 <tr>
@@ -64,9 +72,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" align="center">
-                        <input type="submit" value="Create"/>
-                    </td>
+                    <td align="center">
+                        <input type="button" class="btn btn-success" type="submit" value="Create"/> </td>
+                    <td align="left"><button type="button" class="btn btn-warning"><a href="/students" id="a-cancel">Cancel</a></button> </td>
+
                 </tr>
 
             </caption>
