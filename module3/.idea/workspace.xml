@@ -4,57 +4,73 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d48b2e-90aa-4781-a6d4-ea545038f98e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/7.1.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/src/main/java/config/ApplicationInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/src/main/java/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/src/main/java/controller/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/src/main/java/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/src/main/java/service/CrudProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/src/main/webapp/view/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/src/main/webapp/view/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/src/main/webapp/view/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FINAL/module1/tong hop/123.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FINAL/module1/tong hop/nhap2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="59542125-fd9f-49af-ba78-5d618085595d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../module4-practice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module4-practice/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module4-practice/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module4-practice/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module4-practice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module4-practice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module4-practice/src/main/java/codegym/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module4-practice/src/main/java/codegym/config/ApplicationInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD3_Test/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MD3_Test/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD3_Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MD3_Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD3_Test/src/Database/MD3_Test_QLyHV.sql" beforeDir="false" afterPath="$PROJECT_DIR$/MD3_Test/src/Database/MD3_Test_QLyHV.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD3_Test/src/main/java/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD3_Test/src/main/java/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD3_Test/src/main/webapp/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/MD3_Test/src/main/webapp/view/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD3_Test/src/main/webapp/view/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/MD3_Test/src/main/webapp/view/delete.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD3_Test/src/main/webapp/view/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/MD3_Test/src/main/webapp/view/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD3_Test/src/main/webapp/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/MD3_Test/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoLogin/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DemoLogin/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoLogin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DemoLogin/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case-study-md3-halinh-c0722g1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/case-study-md3-halinh-c0722g1/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/7.1.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/7.1.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/7.1.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/classes/java/main/config/ApplicationInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/classes/java/main/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/classes/java/main/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/classes/java/main/controller/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/classes/java/main/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/classes/java/main/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/libs/demoSpringMVC-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/libs/demoSpringMVC2-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/java/config/ApplicationInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/java/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/java/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/java/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/java/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/java/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/webapp/view/createProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/webapp/view/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/webapp/view/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/webapp/view/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/src/main/webapp/view/showProduct.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +85,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2HbqiAhNeYSivqplHgZ4Hl1560F" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IG9j7eFvJga3rbh73g7Ejgd28M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -98,12 +117,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="36d48b2e-90aa-4781-a6d4-ea545038f98e" name="Changes" comment="" />
-      <created>1668564256761</created>
+      <changelist id="59542125-fd9f-49af-ba78-5d618085595d" name="Changes" comment="" />
+      <created>1669796941099</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668564256761</updated>
-      <workItem from="1668564258274" duration="61000" />
+      <updated>1669796941099</updated>
+      <workItem from="1669796942949" duration="150000" />
+      <workItem from="1669797186253" duration="24000" />
     </task>
     <servers />
   </component>
